@@ -565,6 +565,21 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
   <h2>Mục lục</h2>
   <nav id="railnav">
     <div class="navhead"><span>Mục lục</span><button class="navclose" id="navclose" type="button" aria-label="Đóng mục lục">✕</button></div>
+    <div class="toc" data-for="2026-09-01_2026-09-30" hidden><ul>
+        <li class="lvl1"><a href="#2026-09-01_2026-09-30-actions">Điểm tin<span class="num">2</span></a></li>
+        <li class="lvl1"><a href="#2026-09-01_2026-09-30-s0">Công nghệ đang đi về đâu<span class="num">10</span></a></li>
+        <li><ul class="kids"><li><a href="#2026-09-01_2026-09-30-s0t0">Vòng đời, phổ tần &amp; chuỗi cung ứng<span class="num">3</span></a></li><li><a href="#2026-09-01_2026-09-30-s0t1">Truy nhập quang — làn sóng 50G-PON<span class="num">2</span></a></li><li><a href="#2026-09-01_2026-09-30-s0t2">Wi-Fi 8, Wi-Fi 7 &amp; gateway<span class="num">3</span></a></li><li><a href="#2026-09-01_2026-09-30-s0t3">5G, FWA &amp; IoT di động<span class="num">1</span></a></li><li><a href="#2026-09-01_2026-09-30-s0t4">Smart home &amp; khóa thông minh<span class="num">1</span></a></li></ul></li>
+        <li class="lvl1"><a href="#2026-09-01_2026-09-30-s1">Đối thủ đang bán gì<span class="num">13</span></a></li>
+        <li><ul class="kids"><li><a href="#2026-09-01_2026-09-30-s1t0">Truy nhập quang — làn sóng 50G-PON<span class="num">4</span></a></li><li><a href="#2026-09-01_2026-09-30-s1t1">Wi-Fi 8, Wi-Fi 7 &amp; gateway<span class="num">5</span></a></li><li><a href="#2026-09-01_2026-09-30-s1t2">5G, FWA &amp; IoT di động<span class="num">1</span></a></li><li><a href="#2026-09-01_2026-09-30-s1t3">Smart home &amp; khóa thông minh<span class="num">2</span></a></li><li><a href="#2026-09-01_2026-09-30-s1t4">Set-top box &amp; truyền hình<span class="num">1</span></a></li></ul></li>
+        <li class="lvl1"><a href="#2026-09-01_2026-09-30-s2">Thị trường trong nước đang mua gì<span class="num">14</span></a></li>
+        <li><ul class="kids"><li><a href="#2026-09-01_2026-09-30-s2t0">Thị trường trong nước — nhà mạng ra sản phẩm<span class="num">4</span></a></li><li><a href="#2026-09-01_2026-09-30-s2t1">Đấu thầu — nhà mạng mua thiết bị &amp; hệ thống mạng<span class="num">10</span></a></li></ul></li>
+        <li class="lvl1"><a href="#2026-09-01_2026-09-30-s3">Rủi ro — bảo mật, quy định, vòng đời, nguồn cung<span class="num">3</span></a></li>
+        <li><ul class="kids"><li><a href="#2026-09-01_2026-09-30-s3t0">Vòng đời, phổ tần &amp; chuỗi cung ứng<span class="num">3</span></a></li></ul></li>
+        <li class="lvl1"><a href="#2026-09-01_2026-09-30-s5">Ngoài vùng quan tâm — đáng liếc<span class="num">2</span></a></li>
+        <li><ul class="kids"><li><a href="#2026-09-01_2026-09-30-s5t0">Ngoài vùng quan tâm — đáng liếc<span class="num">2</span></a></li></ul></li>
+        <li class="lvl1"><a href="#2026-09-01_2026-09-30-upcoming">Lịch sắp tới<span class="num">6</span></a></li>
+        <li class="lvl1"><a href="#2026-09-01_2026-09-30-rings">Bảng radar rings<span class="num">24</span></a></li>
+    </ul></div>
     <div class="toc" data-for="2026-08-01_2026-08-31" hidden><ul>
         <li class="lvl1"><a href="#2026-08-01_2026-08-31-actions">Điểm tin<span class="num">9</span></a></li>
         <li class="lvl1"><a href="#2026-08-01_2026-08-31-s0">Công nghệ đang đi về đâu<span class="num">7</span></a></li>
@@ -625,7 +640,7 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
         <li class="lvl1"><a href="#2026-05-01_2026-05-31-upcoming">Lịch sắp tới<span class="num">6</span></a></li>
         <li class="lvl1"><a href="#2026-05-01_2026-05-31-rings">Bảng radar rings<span class="num">24</span></a></li>
     </ul></div>
-    <div class="foot">4 kỳ báo cáo<br><span class="nw">Tiêu chí chọn tin: radar-config.yaml</span></div>
+    <div class="foot">5 kỳ báo cáo<br><span class="nw">Tiêu chí chọn tin: radar-config.yaml</span></div>
   </nav>
 </aside>
 
@@ -644,6 +659,7 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
     <div class="picker">
       <label for="periodsel">Kỳ báo cáo</label>
       <select id="periodsel">
+        <option value="2026-09-01_2026-09-30">01/09 – 30/09/2026</option>
         <option value="2026-08-01_2026-08-31">01/08 – 31/08/2026</option>
         <option value="2026-07-01_2026-07-31">01/07 – 31/07/2026</option>
         <option value="2026-06-01_2026-06-30">01/06 – 30/06/2026</option>
@@ -666,6 +682,301 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
   </div>
   </div>
   <p class="gfnote" id="gfnote" hidden></p>
+<article class="period" id="2026-09-01_2026-09-30" hidden data-label="01/09 – 30/09/2026" data-range="01/09 – 30/09/2026" data-gcounts='{&quot;fwa_5g&quot;: 6, &quot;consumer_devices&quot;: 7, &quot;wifi_home&quot;: 8, &quot;wifi_enterprise&quot;: 6, &quot;pon_access&quot;: 9, &quot;smart_home_platform&quot;: 4, &quot;dau_thau&quot;: 13, &quot;boi_canh_nganh&quot;: 2}'>
+<div class="stats"><div><span class="v" data-stat="items">42</span><span class="k">tin</span></div><div><span class="v" data-stat="sources">24</span><span class="k">nguồn</span></div><div><span class="v" data-stat="upcoming">6</span><span class="k">mốc sắp tới</span></div></div>
+<h2 class="sectionhead actions-head" id="2026-09-01_2026-09-30-actions">Điểm tin<button type="button" class="fold" aria-expanded="true" aria-controls="2026-09-01_2026-09-30-actions-body" aria-label="Thu gọn hoặc mở rộng mục này" title="Thu gọn"></button></h2><div class="secbody" id="2026-09-01_2026-09-30-actions-body">
+<ol class="actions">
+<li data-groups="fwa_5g consumer_devices"><span class="chip hi">cao</span><div class="act-body"><a href="#2026-09-01_2026-09-30-R-01">Việt Nam tắt 2G trên toàn quốc từ 15/09/2026</a><span class="act-what"><b>đưa vào roadmap, cập nhật spec:</b> Rà toàn bộ thiết bị đang bán và đã bán có module di động: thiết bị chỉ 2G phải thay hoặc cập nhật; thiết bị mới bắt buộc VoLTE/LTE Cat-1 bis trở lên.</span></div></li>
+<li data-groups="wifi_home"><span class="chip hi">cao</span><div class="act-body"><a href="#2026-09-01_2026-09-30-R-13">TP-Link ra trọn dải Wi-Fi 8 tại IFA 2026: router Archer 8 Ultra và mesh Deco 8 Ultra, đặt trước từ 30/09</a><span class="act-what"><b>theo dõi vendor, đưa vào roadmap:</b> Đẩy mốc mẫu mesh/gateway Wi-Fi 8; so tính năng StabilityEngine của TP-Link để định vị sản phẩm.</span></div></li>
+</ol>
+</div>
+<h2 class="sectionhead q-direction" id="2026-09-01_2026-09-30-s0">Công nghệ đang đi về đâu<span class="num">10</span><button type="button" class="fold" aria-expanded="true" aria-controls="2026-09-01_2026-09-30-s0-body" aria-label="Thu gọn hoặc mở rộng mục này" title="Thu gọn"></button></h2>
+<div class="secbody" id="2026-09-01_2026-09-30-s0-body">
+<section class="topic" id="2026-09-01_2026-09-30-s0t0">
+  <h3>Vòng đời, phổ tần &amp; chuỗi cung ứng<span class="num">3</span></h3>
+  <div class="cards">
+    <div class="card" id="2026-09-01_2026-09-30-R-02" data-groups="wifi_home wifi_enterprise" data-source="GSMA">
+      <div class="meta"><span class="id">R-02</span><span class="src">07/09/2026 · GSMA · chuẩn hóa</span><span class="chip grp">Mesh WiFi &amp; Gateway gia đình</span><span class="chip grp">WiFi doanh nghiệp</span><span class="chip mid">trung</span><span class="chip act act-road">đưa vào roadmap</span></div>
+      <h4><a href="https://www.gsma.com/newsroom/all-documents/mobile-ecosystem-ready-to-maximise-use-of-6-ghz-as-gsma-urges-policymakers-to-unlock-spectrum-for-mobile/">GSMA kêu gọi mở băng 6 GHz phía trên cho di động — cạnh tranh trực tiếp với Wi-Fi</a></h4>
+      <div class="cmain"><p>Tại Kuala Lumpur ngày 07/09/2026, GSMA nói hệ sinh thái di động đã sẵn sàng triển khai quy mô lớn ở băng 6 GHz phía trên và kêu gọi các nhà hoạch định chính sách mở phổ này cho di động, coi đây là băng dung lượng then chốt cho mạng tương lai.</p></div>
+      <div class="cfoot"><button type="button" class="anbtn" aria-expanded="false" aria-controls="2026-09-01_2026-09-30-R-02-an">Phân tích</button></div>
+      <div class="cside" id="2026-09-01_2026-09-30-R-02-an" hidden><p class="whykeep"><b>Vì sao đáng giữ:</b> Băng 6 GHz phía trên là chỗ Wi-Fi 7/8 cần kênh 320 MHz; châu Á đang được vận động để dành cho di động.</p><p class="decisionrow"><b>Nên làm gì:</b> Theo dõi quyết định phổ 6 GHz của Việt Nam (QCVN 136:2025 mới quản lý 5925–6425 MHz); thiết kế gateway Wi-Fi 7/8 không phụ thuộc vào băng 6 GHz phía trên.</p></div>
+    </div>
+  </div>
+  <ul class="briefs">
+  <li id="2026-09-01_2026-09-30-R-04" data-groups="fwa_5g" data-source="IoT Business News"><span class="id">R-04</span> <a href="https://iotbusinessnews.com/2026/09/17/cellular-iot-module-shipments-rise-15-as-cat-1-bis-takes-the-lead/"><b>Lô module IoT di động tăng 15% nửa đầu 2026, LTE Cat 1 bis dẫn đầu; chi phí linh kiện và thời gian giao hàng tăng</b></a> <span class="bmeta">17/09/2026 · IoT Business News</span><span class="chip grp">FWA &amp; 5G</span><br>Lô module IoT di động toàn cầu nửa đầu 2026 tăng 15% so với cùng kỳ, LTE Cat 1 bis là động lực sản lượng chính, trong khi chi phí linh kiện và thời gian giao hàng dài hơn bắt đầu gây áp lực lên chuỗi cung ứng.</li>
+  <li id="2026-09-01_2026-09-30-R-06" data-groups="fwa_5g" data-source="everything RF (Product Update 10/09)"><span class="id">R-06</span> <a href="https://www.everythingrf.com/rf-newsletters/2656"><b>LTSCT (Ấn Độ) ra module LTE Cat 1 bis LCC40 nhắm thay thiết bị 2G/3G</b></a> <span class="bmeta">10/09/2026 · everything RF (Product Update 10/09)</span><span class="chip grp">FWA &amp; 5G</span><br>Bản tin sản phẩm ngày 10/09/2026 của everything RF giới thiệu module LTE Cat 1 bis LCC40 của LTSCT (băng FDD 1/3/5/8, TDD 40/41, CPU ARM Cortex-M3 204 MHz), được giới thiệu là đường nâng cấp từ mạng 2G/3G cũ; cùng bản tin có LE910Q1 của Telit Cinterion và nRF93M1 của Nordic.</li>
+  </ul>
+</section>
+<section class="topic" id="2026-09-01_2026-09-30-s0t1">
+  <h3>Truy nhập quang — làn sóng 50G-PON<span class="num">2</span></h3>
+  <ul class="briefs">
+  <li id="2026-09-01_2026-09-30-R-10" data-groups="pon_access" data-source="Vodafone"><span class="id">R-10</span> <a href="https://www.vodafone.com/news/newsroom/technology/vodafone-and-nokia-test-new-tech-to-boost-capacity-and-life-of-existing-fibre-network"><b>Vodafone và Nokia thử công nghệ tăng dung lượng mạng cáp quang hiện có, 50 Gbps trong phòng lab</b></a> <span class="bmeta">30/09/2026 · Vodafone</span><span class="chip grp">PON / Truy nhập quang</span><br>Vodafone và Nokia thử công nghệ mới để tăng dung lượng và kéo dài tuổi thọ mạng cáp quang hiện có; ISPreview đưa tin thử 50 Gbps FTTP ở phòng lab Newbury (theo tiêu đề; chưa đọc toàn văn).<br><span class="corrob">Xác nhận chéo: <a href="https://www.ispreview.co.uk/index.php/2026/09/vodafone-uk-and-nokia-trial-50gbps-fttp-broadband-in-their-newbury-lab.html">ISPreview UK</a></span></li>
+  <li id="2026-09-01_2026-09-30-R-12" data-groups="pon_access" data-source="Yahoo Finance"><span class="id">R-12</span> <a href="https://finance.yahoo.com/technology/articles/semtech-delivers-10g-pon-chipset-003000569.html"><b>Semtech ra chipset 10G PON cho mô-đun OLT 50G ba thế hệ</b></a> <span class="bmeta">08/09/2026 · Yahoo Finance</span><span class="chip grp">PON / Truy nhập quang</span><br>Semtech ra chipset 10G PON cho mô-đun quang OLT 50G hỗ trợ ba thế hệ PON (theo tiêu đề; trang không tải được).</li>
+  </ul>
+</section>
+<section class="topic" id="2026-09-01_2026-09-30-s0t2">
+  <h3>Wi-Fi 8, Wi-Fi 7 &amp; gateway<span class="num">3</span></h3>
+  <div class="cards">
+    <div class="card" id="2026-09-01_2026-09-30-R-16" data-groups="wifi_enterprise" data-source="Dell&#x27;Oro Group">
+      <div class="meta"><span class="id">R-16</span><span class="src">10/09/2026 · Dell&#x27;Oro Group · trend</span><span class="chip grp">WiFi doanh nghiệp</span><span class="chip mid">trung</span><span class="chip act act-road">đưa vào roadmap</span></div>
+      <h4><a href="https://www.delloro.com/news/wi-fi-7-surpasses-50-percent-of-the-market-with-wi-fi-8-on-the-horizon/">Dell&#x27;Oro: Wi-Fi 7 vượt 50% thị trường WLAN doanh nghiệp, kỷ lục hơn 10 triệu AP quý 2/2026</a></h4>
+      <div class="cmain"><p>Theo Dell'Oro, các hãng bán hơn 10 triệu access point trong quý 2/2026, kỷ lục sản lượng toàn ngành, và Wi-Fi 7 vượt 50% thị trường, với Wi-Fi 8 ở phía trước.</p></div>
+      <div class="cfoot"><p class="corrob">Xác nhận chéo: <a href="https://www.sdxcentral.com/news/wi-fi-7-takes-center-stage-as-global-access-point-shipments-soar/">SDxCentral</a> · <a href="https://www.spiceworks.com/it-hardware/wi-fi-7-adoption-acceleration-is-great-news-for-cisco-hpe-and-ubiquiti/">Spiceworks</a></p><button type="button" class="anbtn" aria-expanded="false" aria-controls="2026-09-01_2026-09-30-R-16-an">Phân tích</button></div>
+      <div class="cside" id="2026-09-01_2026-09-30-R-16-an" hidden><p class="whykeep"><b>Vì sao đáng giữ:</b> Wi-Fi 7 đã thành chuẩn chủ đạo của WLAN doanh nghiệp.</p><p class="decisionrow"><b>Nên làm gì:</b> AP doanh nghiệp mới mặc định Wi-Fi 7; lên kế hoạch AP Wi-Fi 8.</p></div>
+    </div>
+  </div>
+  <ul class="briefs">
+  <li id="2026-09-01_2026-09-30-R-17" data-groups="wifi_enterprise" data-source="Wi-Fi NOW Global"><span class="id">R-17</span> <a href="https://wifinowglobal.com/news-blog/wi%E2%80%91fi-7-becomes-enterprise-wlans-biggest-revenue-category-as-market-surges-23-idc-says/"><b>IDC: Wi-Fi 7 chiếm 53% doanh thu AP doanh nghiệp quý 2/2026, thị trường tăng 23%</b></a> <span class="bmeta">12/09/2026 · Wi-Fi NOW Global</span><span class="chip grp">WiFi doanh nghiệp</span><br>Theo IDC, Wi-Fi 7 chiếm 53% doanh thu access point doanh nghiệp quý 2/2026, thành nhóm doanh thu lớn nhất; thị trường tăng 23%. Ubiquiti tăng 33,1%, HPE đạt 17,2% thị phần.</li>
+  <li id="2026-09-01_2026-09-30-R-19" data-groups="wifi_home pon_access" data-source="Wi-Fi NOW Global"><span class="id">R-19</span> <a href="https://wifinowglobal.com/news-and-blog/roundup-mediatek-dimensity-with-wi-fi-7-dna-finlands-full-stack-prpl-sparks-uwb-powers-studio-headphones-ubee-plume-fcc-grants-hardware-relief/"><b>DNA Phần Lan chạy gateway trọn bộ phần mềm prpl</b></a> <span class="bmeta">27/09/2026 · Wi-Fi NOW Global</span><span class="chip grp">Mesh WiFi &amp; Gateway gia đình</span><span class="chip grp">PON / Truy nhập quang</span><br>Bản tin tuần của Wi-Fi NOW nêu DNA (Phần Lan) triển khai gateway chạy trọn bộ phần mềm prpl (theo tiêu đề mục trong bản tin; chưa đọc được chi tiết).</li>
+  </ul>
+</section>
+<section class="topic" id="2026-09-01_2026-09-30-s0t3">
+  <h3>5G, FWA &amp; IoT di động<span class="num">1</span></h3>
+  <ul class="briefs">
+  <li id="2026-09-01_2026-09-30-R-21" data-groups="fwa_5g" data-source="IoT Business News"><span class="id">R-21</span> <a href="https://iotbusinessnews.com/2026/09/25/ntt-docomo-business-adds-sgp-32-esim-support-to-global-iot-connectivity-platform/"><b>NTT DOCOMO BUSINESS thêm hỗ trợ eSIM SGP.32 cho nền kết nối IoT toàn cầu</b></a> <span class="bmeta">25/09/2026 · IoT Business News</span><span class="chip grp">FWA &amp; 5G</span><br>NTT DOCOMO BUSINESS mở rộng nền docomo business SIGN bằng gói "Pro" quản lý hàng chục nghìn kết nối IoT qua nhiều nước, có tự động hoá vòng đời kết nối, bảo mật và hỗ trợ chuẩn eSIM GSMA SGP.32.</li>
+  </ul>
+</section>
+<section class="topic" id="2026-09-01_2026-09-30-s0t4">
+  <h3>Smart home &amp; khóa thông minh<span class="num">1</span></h3>
+  <ul class="briefs">
+  <li id="2026-09-01_2026-09-30-R-23" data-groups="smart_home_platform" data-source="Hackster.io"><span class="id">R-23</span> <a href="https://www.hackster.io/news/the-csa-opens-certification-for-suzi-zigbee-s-sub-gigahertz-mesh-iot-sibling-5646596a3306"><b>CSA mở chứng nhận sản phẩm cho Suzi — Zigbee băng dưới 1 GHz</b></a> <span class="bmeta">24/09/2026 · Hackster.io</span><span class="chip grp">Smart Home / Nền tảng IoT</span><br>Connectivity Standards Alliance mở chứng nhận sản phẩm cho Suzi, phần mở rộng băng dưới 1 GHz của Zigbee dành cho mạng mesh IoT tầm xa, tiêu thụ thấp; Exegin là một trong những hãng đầu tiên được chứng nhận.<br><span class="corrob">Xác nhận chéo: <a href="https://iottechnews.com/news/csa-opens-certification-for-zigbee-sub-ghz-extension-suzi/">IoT Tech News</a> · <a href="https://www.forbes.com/sites/paullamkin/2026/09/02/zigbees-long-range-suzi-now-open-for-devices-to-get-certified/">Forbes</a> · <a href="https://www.iotinsider.com/industries/smart-home/exegin-among-first-vendors-certified-for-zigbees-new-sub-ghz-technology/">IoT Insider — Exegin</a></span></li>
+  </ul>
+</section>
+</div>
+<h2 class="sectionhead q-competitor" id="2026-09-01_2026-09-30-s1">Đối thủ đang bán gì<span class="num">13</span><button type="button" class="fold" aria-expanded="true" aria-controls="2026-09-01_2026-09-30-s1-body" aria-label="Thu gọn hoặc mở rộng mục này" title="Thu gọn"></button></h2>
+<div class="secbody" id="2026-09-01_2026-09-30-s1-body">
+<section class="topic" id="2026-09-01_2026-09-30-s1t0">
+  <h3>Truy nhập quang — làn sóng 50G-PON<span class="num">4</span></h3>
+  <div class="cards">
+    <div class="card" id="2026-09-01_2026-09-30-R-07" data-groups="pon_access" data-source="PR Newswire (FT Markets)">
+      <div class="meta"><span class="id">R-07</span><span class="src">22/09/2026 · PR Newswire (FT Markets) · update lớn</span><span class="chip grp">PON / Truy nhập quang</span><span class="chip mid">trung</span><span class="chip act act-watch">theo dõi vendor</span><span class="chip act act-road">đưa vào roadmap</span></div>
+      <h4><a href="https://markets.ft.com/data/announce/detail?dockey=600-202609220600PR_NEWS_USPRX____HK52355-1">Sercomm ra dải ONU 50G PON chuẩn ITU-T tại SCTE TechExpo</a></h4>
+      <div class="cmain"><p>Sercomm công bố danh mục sản phẩm 50G PON tuân thủ đầy đủ chuẩn ITU-T — hệ sinh thái ONU 50G PON cho dịch vụ đa gigabit đối xứng, cùng tồn tại với hạ tầng PON cũ.</p></div>
+      <div class="cfoot"><p class="corrob">Xác nhận chéo: <a href="https://www.tradingview.com/news/tradingview:704311c4f2d16:0-sercomm-corporation-launches-itu-t-compliant-50g-pon-portfolio/">TradingView</a></p><button type="button" class="anbtn" aria-expanded="false" aria-controls="2026-09-01_2026-09-30-R-07-an">Phân tích</button></div>
+      <div class="cside" id="2026-09-01_2026-09-30-R-07-an" hidden><p class="whykeep"><b>Vì sao đáng giữ:</b> Một ODM thiết bị đầu cuối nhà mạng lớn đã có ONU 50G PON — đối thủ trực tiếp của ONT VNPT Technology.</p><p class="decisionrow"><b>Nên làm gì:</b> Đặt mốc ONU 50G PON trong lộ trình ONT; theo dõi nhà mạng nào mua ONU 50G PON của Sercomm.</p><p class="marketrow"><b>Thị trường:</b> Sercomm có ONU 50G PON; ONT của VNPT Technology cao nhất là XGS-PON.</p></div>
+    </div>
+  </div>
+  <ul class="briefs">
+  <li id="2026-09-01_2026-09-30-R-08" data-groups="pon_access" data-source="Light Reading"><span class="id">R-08</span> <a href="https://www.lightreading.com/telecoms-software/zte-antel-test-50g-pon-in-latin-america"><b>ZTE và Antel (Uruguay) thử 50G PON ở Mỹ Latinh</b></a> <span class="bmeta">15/09/2026 · Light Reading</span><span class="chip grp">PON / Truy nhập quang</span><br>ZTE và nhà mạng Antel thử nghiệm 50G PON tại Mỹ Latinh (theo tiêu đề bài; chưa đọc toàn văn).</li>
+  <li id="2026-09-01_2026-09-30-R-09" data-groups="pon_access" data-source="Business Wire"><span class="id">R-09</span> <a href="https://www.businesswire.com/news/home/20260929792571/en/Calix-and-Astound-Complete-Successful-50G-PON-Trial-Demonstrating-a-Path-to-Rapid-Growth-Without-Network-Overhauls"><b>Calix và Astound thử thành công 50G-PON</b></a> <span class="bmeta">29/09/2026 · Business Wire</span><span class="chip grp">PON / Truy nhập quang</span><br>Calix và nhà mạng Mỹ Astound hoàn tất thử nghiệm 50G-PON, cho thấy đường tăng trưởng không cần đại tu mạng (theo tiêu đề thông cáo; trang trả HTTP 403 khi fetch).<br><span class="corrob">Xác nhận chéo: <a href="https://www.marketscreener.com/news/calix-and-astound-complete-successful-50g-pon-trial-ce785addd08af122">Calix — bản tin cổ đông</a></span></li>
+  <li id="2026-09-01_2026-09-30-R-11" data-groups="pon_access wifi_enterprise" data-source="Huawei"><span class="id">R-11</span> <a href="https://www.huawei.com/en/news/2026/9/hc-f5ga-iftto-fiber-sensing"><b>Huawei ra loạt giải pháp F5G-A hướng AI cho công nghiệp, khuôn viên, ISP và các điểm trình diễn toàn cầu</b></a> <span class="bmeta">17/09/2026 · Huawei</span><span class="chip grp">PON / Truy nhập quang</span><span class="chip grp">WiFi doanh nghiệp</span><br>Huawei công bố loạt giải pháp F5G Advanced hướng AI cho các kịch bản công nghiệp, lưới điện, cụm tính toán, khuôn viên AI và ISP, kèm các điểm trình diễn toàn quang (Fiberstar Indonesia, sân bay Muscat, toà G-Tower Thái Lan...).</li>
+  </ul>
+</section>
+<section class="topic" id="2026-09-01_2026-09-30-s1t1">
+  <h3>Wi-Fi 8, Wi-Fi 7 &amp; gateway<span class="num">5</span></h3>
+  <div class="cards">
+    <div class="card feature" id="2026-09-01_2026-09-30-R-13" data-groups="wifi_home" data-source="Wi-Fi NOW Global">
+      <div class="meta"><span class="id">R-13</span><span class="src">01/09/2026 · Wi-Fi NOW Global · công nghệ mới</span><span class="chip grp">Mesh WiFi &amp; Gateway gia đình</span><span class="chip hi">cao</span><span class="chip act act-watch">theo dõi vendor</span><span class="chip act act-road">đưa vào roadmap</span></div>
+      <h4><a href="https://wifinowglobal.com/news-and-blog/tp-link-bets-big-on-wi%E2%80%91fi-8-with-expansive-product-lineup-archer-8-ultra-preorders-starting-september-30/">TP-Link ra trọn dải Wi-Fi 8 tại IFA 2026: router Archer 8 Ultra và mesh Deco 8 Ultra, đặt trước từ 30/09</a></h4>
+      <div class="cmain"><p class="hook">Đối thủ bán lẻ lớn nhất đã có cả router lẫn mesh Wi-Fi 8 để bán — mesh Wi-Fi 7 của mình lùi một thế hệ ngay trong quý này.</p><p>Tại IFA 2026, TP-Link công bố danh mục Wi-Fi 8 dẫn đầu bởi router Archer 8 Ultra và hệ mesh Deco 8 Ultra; đặt trước Archer 8 Ultra bắt đầu ở một số thị trường từ 30/09. Wi-Fi NOW gọi Archer 8 Ultra là router Wi-Fi 8 phổ thông đầu tiên (ASUS đã ra một sản phẩm Wi-Fi 8 tuần trước).</p></div>
+      <div class="cfoot"><p class="corrob">Xác nhận chéo: <a href="https://www.theverge.com/gadgets/987277/tplink-wifi-8-archer-8-ultra-availability">The Verge</a> · <a href="https://www.pcworld.com/article/3225661/tp-links-first-wi-fi-8-router-promises-speed-and-fewer-dropped-connections.html">PCWorld</a> · <a href="https://www.ispreview.co.uk/index.php/2026/09/tp-link-launch-first-wi-fi-8-broadband-routers-with-speeds-up-to-22gbps.html">ISPreview UK</a> · <a href="https://www.gadgetpilipinas.net/2026/09/tp-link-unveils-wi-fi-8-lineup/">TP-Link press release</a></p><button type="button" class="anbtn" aria-expanded="false" aria-controls="2026-09-01_2026-09-30-R-13-an">Phân tích</button></div>
+      <div class="cside" id="2026-09-01_2026-09-30-R-13-an" hidden><p class="whykeep"><b>Vì sao đáng giữ:</b> Wi-Fi 8 chuyển từ công bố sang hàng bán ở cả router và mesh — đúng hai dòng VNPT Technology đang bán ở Wi-Fi 7.</p><p class="decisionrow"><b>Nên làm gì:</b> Đẩy mốc mẫu mesh/gateway Wi-Fi 8; so tính năng StabilityEngine của TP-Link để định vị sản phẩm.</p><p class="prodrow"><b>Ảnh hưởng sản phẩm:</b> Mesh WiFi &amp; Gateway gia đình <span class="hi">(cao)</span> — Đối thủ đã bán mesh thế hệ mới</p><p class="marketrow"><b>Thị trường:</b> TP-Link có mesh Wi-Fi 8; mesh của VNPT Technology đang ở Wi-Fi 7.</p></div>
+    </div>
+  </div>
+  <ul class="briefs">
+  <li id="2026-09-01_2026-09-30-R-14" data-groups="wifi_home" data-source="TechPowerUp"><span class="id">R-14</span> <a href="https://www.techpowerup.com/353271/tp-link-opens-pre-orders-for-archer-8-ultra-its-first-wi-fi-8-router"><b>TP-Link mở đặt trước Archer 8 Ultra, router Wi-Fi 8 đầu tiên của hãng (trừ Mỹ)</b></a> <span class="bmeta">30/09/2026 · TechPowerUp</span><span class="chip grp">Mesh WiFi &amp; Gateway gia đình</span><br>TP-Link công bố Archer 8 Ultra đã mở bán; StabilityEngine gồm UEQM, MCS mới và 2×LDPC giữ thông lượng ổn định hơn tới 33% ở cự ly trung–xa. Dong Knows Tech ghi đặt trước chưa áp dụng ở Mỹ.<br><span class="corrob">Xác nhận chéo: <a href="https://www.forbes.com/sites/marksparrow/2026/09/30/tp-link-starts-taking-orders-for-its-first-wi-fi-8-router/">Forbes</a> · <a href="https://dongknows.com/tp-link-wi-fi-8-archer-8-ultra-is-now-available/">Dong Knows Tech</a> · <a href="https://mediasat.info/en/2026/09/30/tp-link-opens-wi-fi-8-router-preorders-before-the-standard-is-even-final/">mediasat.info</a></span></li>
+  <li id="2026-09-01_2026-09-30-R-15" data-groups="wifi_home" data-source="TechPowerUp"><span class="id">R-15</span> <a href="https://www.techpowerup.com/forums/threads/asus-announces-wi-fi-8-router-availability-in-canada-ahead-of-worldwide-october-release.352365/"><b>ASUS bán router Wi-Fi 8 trước ở Canada, toàn cầu từ tháng 10</b></a> <span class="bmeta">04/09/2026 · TechPowerUp</span><span class="chip grp">Mesh WiFi &amp; Gateway gia đình</span><br>ASUS công bố router Wi-Fi 8 có mặt ở Canada trước khi ra toàn cầu tháng 10 (theo tiêu đề bài).</li>
+  <li id="2026-09-01_2026-09-30-R-18" data-groups="wifi_home" data-source="Notebookcheck"><span class="id">R-18</span> <a href="https://www.notebookcheck.net/Starlink-debuts-Wi-Fi-7-Router-4-ahead-of-gigabit-network-launch.1396841.0.html"><b>Starlink ra Router 4 dùng Wi-Fi 7, hỗ trợ PoE</b></a> <span class="bmeta">11/09/2026 · Notebookcheck</span><span class="chip grp">Mesh WiFi &amp; Gateway gia đình</span><br>Starlink chính thức ra Router 4 — thế hệ router mới dùng Wi-Fi 7, hỗ trợ PoE; tốc độ đỉnh phụ thuộc vào chòm vệ tinh gigabit sắp triển khai.</li>
+  <li id="2026-09-01_2026-09-30-R-20" data-groups="wifi_home" data-source="Yahoo Finance"><span class="id">R-20</span> <a href="https://finance.yahoo.com/technology/articles/ubee-interactives-wi-fi-7-123500756.html"><b>Gateway Wi-Fi 7 EG700 của Ubee đạt chứng nhận đầy đủ Plume/OpenSync</b></a> <span class="bmeta">28/09/2026 · Yahoo Finance</span><span class="chip grp">Mesh WiFi &amp; Gateway gia đình</span><br>Gateway Wi-Fi 7 EG700 của Ubee Interactive đạt chứng nhận Plume/OpenSync đầy đủ (theo tiêu đề; trang không tải được).</li>
+  </ul>
+</section>
+<section class="topic" id="2026-09-01_2026-09-30-s1t2">
+  <h3>5G, FWA &amp; IoT di động<span class="num">1</span></h3>
+  <ul class="briefs">
+  <li id="2026-09-01_2026-09-30-R-22" data-groups="fwa_5g" data-source="Green Bay Press-Gazette (thông cáo)"><span class="id">R-22</span> <a href="https://www.greenbaypressgazette.com/press-release/story/185092/hitron-introduces-vibe2142-to-help-isps-deliver-5g-fwa-services-for-smbs/"><b>Hitron ra VIBE2142 — thiết bị 5G FWA cho doanh nghiệp nhỏ</b></a> <span class="bmeta">29/09/2026 · Green Bay Press-Gazette (thông cáo)</span><span class="chip grp">FWA &amp; 5G</span><br>Hitron giới thiệu VIBE2142 để nhà cung cấp dịch vụ triển khai 5G FWA cho doanh nghiệp vừa và nhỏ (theo tiêu đề; trang trả HTTP 403).</li>
+  </ul>
+</section>
+<section class="topic" id="2026-09-01_2026-09-30-s1t3">
+  <h3>Smart home &amp; khóa thông minh<span class="num">2</span></h3>
+  <ul class="briefs">
+  <li id="2026-09-01_2026-09-30-R-24" data-groups="smart_home_platform consumer_devices" data-source="Gearbrain"><span class="id">R-24</span> <a href="https://www.gearbrain.com/ultraloq-uwb-aliro-smart-locks-2677939577.html"><b>ULTRALOQ ra ba khóa thông minh UWB kèm Aliro và Matter</b></a> <span class="bmeta">25/09/2026 · Gearbrain</span><span class="chip grp">Smart Home / Nền tảng IoT</span><span class="chip grp">Thiết bị tiêu dùng</span><br>ULTRALOQ giới thiệu Bolt Mission, Bolt Pro và Latch 5 Pro với mở khóa rảnh tay bằng UWB, chìa khóa số Aliro và tương thích Matter.</li>
+  <li id="2026-09-01_2026-09-30-R-25" data-groups="smart_home_platform consumer_devices" data-source="MacRumors"><span class="id">R-25</span> <a href="https://www.macrumors.com/2026/09/03/anker-mindbase-new-cameras/"><b>Anker ra MindBase — hub nhà thông minh chạy AI tại chỗ, kiêm NAS, hỗ trợ Matter</b></a> <span class="bmeta">03/09/2026 · MacRumors</span><span class="chip grp">Smart Home / Nền tảng IoT</span><span class="chip grp">Thiết bị tiêu dùng</span><br>Anker ra MindBase, hub AI cho nhà thông minh làm việc với gần 100 thiết bị Anker và thiết bị Matter hãng khác, chạy cùng HomeKit, có thẻ tính toán AI Core và tác tử AI chạy tại chỗ, kiêm NAS tới 48 TB.</li>
+  </ul>
+</section>
+<section class="topic" id="2026-09-01_2026-09-30-s1t4">
+  <h3>Set-top box &amp; truyền hình<span class="num">1</span></h3>
+  <ul class="briefs">
+  <li id="2026-09-01_2026-09-30-R-26" data-groups="consumer_devices smart_home_platform" data-source="Detroit Free Press (thông cáo)"><span class="id">R-26</span> <a href="https://www.freep.com/press-release/story/242584/skyworth-digital-showcased-new-all-in-one-ai-home-hub-powered-by-amlogic-s905d5-at-ibc-2026/"><b>Skyworth Digital trình diễn hub AI tất cả trong một trên Amlogic S905D5 tại IBC 2026</b></a> <span class="bmeta">13/09/2026 · Detroit Free Press (thông cáo)</span><span class="chip grp">Thiết bị tiêu dùng</span><span class="chip grp">Smart Home / Nền tảng IoT</span><br>Skyworth Digital trình diễn hub nhà thông minh AI tất cả trong một chạy chip Amlogic S905D5 tại IBC 2026 (theo tiêu đề; trang trả HTTP 403).</li>
+  </ul>
+</section>
+</div>
+<h2 class="sectionhead q-domestic_market" id="2026-09-01_2026-09-30-s2">Thị trường trong nước đang mua gì<span class="num">14</span><button type="button" class="fold" aria-expanded="true" aria-controls="2026-09-01_2026-09-30-s2-body" aria-label="Thu gọn hoặc mở rộng mục này" title="Thu gọn"></button></h2>
+<div class="secbody" id="2026-09-01_2026-09-30-s2-body">
+<section class="topic" id="2026-09-01_2026-09-30-s2t0">
+  <h3>Thị trường trong nước — nhà mạng ra sản phẩm<span class="num">4</span></h3>
+  <div class="cards">
+    <div class="card feature" id="2026-09-01_2026-09-30-R-27" data-groups="pon_access wifi_home consumer_devices" data-source="Báo Tuyên Quang">
+      <div class="meta"><span class="id">R-27</span><span class="src">23/09/2026 · Báo Tuyên Quang · trend</span><span class="chip grp">PON / Truy nhập quang</span><span class="chip grp">Mesh WiFi &amp; Gateway gia đình</span><span class="chip grp">Thiết bị tiêu dùng</span><span class="chip hi">cao</span><span class="chip act act-road">đưa vào roadmap</span><span class="chip act act-brief">brief khách hàng</span></div>
+      <h4><a href="https://baotuyenquang.com.vn/khoa-hoc-cong-nghe/202609/vnpt-va-qualcomm-technologies-mo-rong-hop-tac-chien-luoc-thuc-day-doi-moi-ai-bien-dd9455a/">VNPT ký thỏa thuận kỹ thuật (CESA) với Qualcomm: XGS-PON + Wi-Fi 7/Wi-Fi 8, AI gateway, camera AI</a></h4>
+      <div class="cmain"><p class="hook">Tập đoàn mẹ đã chọn nền chip Qualcomm cho thế hệ ONT, AI gateway và camera AI tiếp theo — lộ trình sản phẩm của VNPT Technology nên bám đúng khung hợp tác này.</p><p>Ngày 23/09/2026 tại New York, VNPT công bố mở rộng hợp tác chiến lược với Qualcomm Technologies qua Thỏa thuận Dịch vụ Kỹ thuật khách hàng (CESA), tập trung phát triển và thương mại hoá các giải pháp AI biên: nền tảng XGS-PON tích hợp Wi-Fi 7 và Wi-Fi 8, AI gateway, camera AI, laptop AI và các thiết bị biên khác.</p></div>
+      <div class="cfoot"><p class="corrob">Xác nhận chéo: <a href="https://baomoi.com/vnpt-hop-tac-qualcomm-phat-trien-loat-san-pham-ai-the-he-moi-huong-toi-thi-truong-toan-cau-c56128237.epi">Báo Mới</a></p><button type="button" class="anbtn" aria-expanded="false" aria-controls="2026-09-01_2026-09-30-R-27-an">Phân tích</button></div>
+      <div class="cside" id="2026-09-01_2026-09-30-R-27-an" hidden><p class="whykeep"><b>Vì sao đáng giữ:</b> Nhà mạng trong nước ra hướng sản phẩm mới — quy tắc ép nhãn tối thiểu high; thỏa thuận chạm đúng các dòng ONT, gateway, camera của VNPT Technology.</p><p class="decisionrow"><b>Nên làm gì:</b> Đưa nền Qualcomm (XGS-PON + Wi-Fi 7/8, AI gateway, camera AI) vào lộ trình; xác định phần việc VNPT Technology trong CESA.</p><p class="prodrow"><b>Ảnh hưởng sản phẩm:</b> PON / Truy nhập quang <span class="hi">(cao)</span> — Nền chip cho ONT XGS-PON Wi-Fi 7/8 thế hệ tới</p></div>
+    </div>
+  </div>
+  <ul class="briefs">
+  <li id="2026-09-01_2026-09-30-R-28" data-groups="consumer_devices dau_thau" data-source="Cổng đấu thầu Viettel"><span class="id">R-28</span> <a href="https://dauthau.viettel.com.vn/bid-packages/16083"><b>Viettel Telecom thuê hạ tầng cho camera Ezviz và camera JF, giá gói 9,4 tỷ</b></a> <span class="bmeta">30/09/2026 · Cổng đấu thầu Viettel</span><span class="chip grp">Thiết bị tiêu dùng</span><span class="chip grp">Đấu thầu &amp; nhu cầu thị trường</span><br>Viettel Telecom đăng gói 211-26-ĐTRR-VTT-ĐTTS "Thuê hạ tầng cho Camera Ezviz và Camera JF" (đấu thầu rộng rãi trong nước, phi tư vấn), giá gói 9,38 tỷ đồng, đóng thầu 09/10/2026. Chưa có nhà thầu trúng trong khung.</li>
+  <li id="2026-09-01_2026-09-30-R-29" data-groups="dau_thau pon_access" data-source="Cổng đấu thầu Viettel"><span class="id">R-29</span> <a href="https://dauthau.viettel.com.vn/bid-packages/16070"><b>Viettel Solutions mời thầu thiết bị đầu cuối, converter, modem quang cho dịch vụ kênh truyền, giá gói 11,7 tỷ</b></a> <span class="bmeta">30/09/2026 · Cổng đấu thầu Viettel</span><span class="chip grp">Đấu thầu &amp; nhu cầu thị trường</span><span class="chip grp">PON / Truy nhập quang</span><br>Tổng công ty Giải pháp doanh nghiệp Viettel đăng gói 155/ĐTRR/HTS/VBSC/2026 mua thiết bị đầu cuối, converter, modem quang, cáp và vật tư phụ cho kinh doanh dịch vụ kênh truyền 6 tháng cuối 2026 và quý 1/2027, giá gói 11,72 tỷ đồng, đóng thầu 12/10/2026. Chưa có nhà thầu trúng trong khung.</li>
+  <li id="2026-09-01_2026-09-30-R-30" data-groups="dau_thau wifi_enterprise" data-source="bidwinner.info"><span class="id">R-30</span> <a href="https://bidwinner.info/4.0/chi-tiet-goi-thau/12521224"><b>VNPT-I lập kế hoạch mua router cung cấp dịch vụ khách hàng, dự toán 0,26 tỷ</b></a> <span class="bmeta">11/09/2026 · bidwinner.info</span><span class="chip grp">Đấu thầu &amp; nhu cầu thị trường</span><span class="chip grp">WiFi doanh nghiệp</span><br>VNPT-I có kế hoạch mua "Thiết bị router cung cấp dịch vụ khách hàng", dự toán 0,26 tỷ đồng, tổ chức quý III/2026. Chưa có nhà thầu trúng và giá trúng (bidwinner không hiện).</li>
+  </ul>
+</section>
+<section class="topic" id="2026-09-01_2026-09-30-s2t1">
+  <h3>Đấu thầu — nhà mạng mua thiết bị &amp; hệ thống mạng<span class="num">10</span></h3>
+  <ul class="briefs">
+  <li id="2026-09-01_2026-09-30-R-31" data-groups="dau_thau" data-source="bidwinner.info"><span class="id">R-31</span> <a href="https://bidwinner.info/4.0/chi-tiet-goi-thau/12675346"><b>VNPT Net mời thầu hệ thống thiết bị vô tuyến 5G và dịch vụ (miền Bắc), giá gói 79,9 tỷ</b></a> <span class="bmeta">30/09/2026 · bidwinner.info</span><span class="chip grp">Đấu thầu &amp; nhu cầu thị trường</span><br>Tổng công ty Hạ tầng mạng (VNPT Net) mời thầu "Trang bị hệ thống thiết bị vô tuyến 5G và dịch vụ" cho các tỉnh miền Bắc và Bắc Trung Bộ, giá gói 79,88 tỷ đồng, đóng thầu 19/10/2026. Chưa có nhà thầu trúng và giá trúng (bidwinner không hiện).</li>
+  <li id="2026-09-01_2026-09-30-R-32" data-groups="dau_thau" data-source="bidwinner.info"><span class="id">R-32</span> <a href="https://bidwinner.info/4.0/chi-tiet-goi-thau/12674797"><b>VNPT Net mời thầu hệ thống thiết bị vô tuyến 5G và dịch vụ (miền Trung), giá gói 61,7 tỷ</b></a> <span class="bmeta">30/09/2026 · bidwinner.info</span><span class="chip grp">Đấu thầu &amp; nhu cầu thị trường</span><br>VNPT Net mời thầu "Trang bị hệ thống thiết bị vô tuyến 5G và dịch vụ" cho Quảng Trị, Huế, Gia Lai, Đắk Lắk, Quảng Ngãi, Đà Nẵng, Hà Tĩnh, giá gói 61,68 tỷ đồng, đóng thầu 19/10/2026. Chưa có nhà thầu trúng và giá trúng (bidwinner không hiện).</li>
+  <li id="2026-09-01_2026-09-30-R-33" data-groups="dau_thau" data-source="bidwinner.info"><span class="id">R-33</span> <a href="https://bidwinner.info/4.0/chi-tiet-goi-thau/12656985"><b>VNPT Net lập kế hoạch mua Site Router cho kết nối 5G vùng MAN-E Huawei, dự toán 143,0 tỷ</b></a> <span class="bmeta">29/09/2026 · bidwinner.info</span><span class="chip grp">Đấu thầu &amp; nhu cầu thị trường</span><br>VNPT Net có kế hoạch "Trang bị thiết bị Site Router phục vụ kết nối 5G vùng MAN-E Huawei năm 2026", dự toán 143,03 tỷ đồng, phạm vi toàn quốc, tổ chức quý IV/2026. Chưa có nhà thầu trúng và giá trúng (bidwinner không hiện).</li>
+  <li id="2026-09-01_2026-09-30-R-34" data-groups="dau_thau" data-source="bidwinner.info"><span class="id">R-34</span> <a href="https://bidwinner.info/4.0/chi-tiet-goi-thau/12656054"><b>VNPT Net mời thầu phân hệ quản lý cấu hình mạng lưới hợp nhất, giá gói 17,3 tỷ</b></a> <span class="bmeta">29/09/2026 · bidwinner.info</span><span class="chip grp">Đấu thầu &amp; nhu cầu thị trường</span><br>VNPT Net mời thầu "Xây dựng phân hệ quản lý cấu hình mạng lưới hợp nhất", giá gói 17,30 tỷ đồng, đóng thầu 19/10/2026. Chưa có nhà thầu trúng và giá trúng (bidwinner không hiện).</li>
+  <li id="2026-09-01_2026-09-30-R-35" data-groups="dau_thau" data-source="bidwinner.info"><span class="id">R-35</span> <a href="https://bidwinner.info/4.0/chi-tiet-goi-thau/12662223"><b>Viettel mời thầu hệ thống tự động khai báo, đồng bộ tham số vô tuyến 5G, giá gói 12,5 tỷ</b></a> <span class="bmeta">29/09/2026 · bidwinner.info</span><span class="chip grp">Đấu thầu &amp; nhu cầu thị trường</span><br>Tập đoàn Viettel đăng gói 17-2026-Mobile "Mua sắm hệ thống tự động khai báo, đồng bộ tham số vô tuyến 5G, tối ưu hoá hiệu suất" trên hệ thống đấu thầu quốc gia, giá gói 12,51 tỷ đồng, đóng thầu 29/10/2026. Chưa có nhà thầu trúng trong khung (bidwinner không hiện).</li>
+  <li id="2026-09-01_2026-09-30-R-36" data-groups="dau_thau" data-source="bidwinner.info"><span class="id">R-36</span> <a href="https://bidwinner.info/4.0/chi-tiet-goi-thau/12649534"><b>VNPT Net mời thầu thiết kế, cung cấp và cài đặt hệ thống HSS</b></a> <span class="bmeta">28/09/2026 · bidwinner.info</span><span class="chip grp">Đấu thầu &amp; nhu cầu thị trường</span><br>VNPT Net đăng hai thông báo mời thầu cùng tên "Thiết kế kỹ thuật, cung cấp và cài đặt hệ thống HSS" (TBMT 2600558399 và 2600554915), đóng thầu 16/10/2026; bidwinner ghi giá gói 1,81 triệu đồng — con số bất thường, chưa kiểm được. Chưa có nhà thầu trúng và giá trúng.<br><span class="corrob">Xác nhận chéo: <a href="https://bidwinner.info/4.0/chi-tiet-goi-thau/12648027">bidwinner.info — thông báo thứ hai cùng tên</a></span></li>
+  <li id="2026-09-01_2026-09-30-R-37" data-groups="dau_thau" data-source="bidwinner.info"><span class="id">R-37</span> <a href="https://bidwinner.info/4.0/chi-tiet-goi-thau/12631878"><b>VNPT Net mời thầu nâng cấp hệ thống Mentor, giá gói 45,2 tỷ</b></a> <span class="bmeta">25/09/2026 · bidwinner.info</span><span class="chip grp">Đấu thầu &amp; nhu cầu thị trường</span><br>VNPT Net mời thầu "Nâng cấp hệ thống Mentor", giá gói 45,17 tỷ đồng, đóng thầu 13/10/2026. Chưa có nhà thầu trúng và giá trúng (bidwinner không hiện).</li>
+  <li id="2026-09-01_2026-09-30-R-38" data-groups="dau_thau" data-source="bidwinner.info"><span class="id">R-38</span> <a href="https://bidwinner.info/4.0/chi-tiet-goi-thau/12623251"><b>VNPT Net mời thầu cung cấp, lắp đặt thiết bị MAN-E tại VNPT Khánh Hòa, giá gói 117,1 tỷ</b></a> <span class="bmeta">24/09/2026 · bidwinner.info</span><span class="chip grp">Đấu thầu &amp; nhu cầu thị trường</span><br>VNPT Net mời thầu "Cung cấp và lắp đặt thiết bị MAN-E tại VNPT Khánh Hòa", giá gói 117,05 tỷ đồng, đóng thầu 13/10/2026 (kế hoạch tháng 5 ghi dự toán 140,4 tỷ). Chưa có nhà thầu trúng và giá trúng (bidwinner không hiện).</li>
+  <li id="2026-09-01_2026-09-30-R-39" data-groups="dau_thau" data-source="Cổng đấu thầu Viettel"><span class="id">R-39</span> <a href="https://dauthau.viettel.com.vn/bid-packages/14569"><b>Viettel High Tech trúng gói trạm 5G O-RAN vùng 3 miền Nam của Viettel, giá trúng 1.043,5 tỷ</b></a> <span class="bmeta">23/09/2026 · Cổng đấu thầu Viettel</span><span class="chip grp">Đấu thầu &amp; nhu cầu thị trường</span><br>Kết quả gói 12-2026-Mobile (1.187 thiết bị vô tuyến 5G 32T32R chuẩn O-RAN, sản xuất tại Việt Nam; mời thầu 30/06/2026, giá gói 1.094,43 tỷ đồng) công bố 23/09/2026: Viettel High Tech trúng, giá trúng 1.043,49 tỷ đồng.</li>
+  <li id="2026-09-01_2026-09-30-R-40" data-groups="dau_thau" data-source="Cổng đấu thầu Viettel"><span class="id">R-40</span> <a href="https://dauthau.viettel.com.vn/bid-packages/14567"><b>Viettel High Tech trúng gói trạm 5G vùng 1 miền Trung của Viettel, giá trúng 1.937,7 tỷ</b></a> <span class="bmeta">23/09/2026 · Cổng đấu thầu Viettel</span><span class="chip grp">Đấu thầu &amp; nhu cầu thị trường</span><br>Kết quả gói 09-2026-Mobile (giải pháp trạm 5G vùng 1 miền Trung; mời thầu 30/06/2026, giá gói 2.027,59 tỷ đồng) công bố 23/09/2026: Viettel High Tech trúng, giá trúng 1.937,70 tỷ đồng.</li>
+  </ul>
+</section>
+</div>
+<h2 class="sectionhead q-risk" id="2026-09-01_2026-09-30-s3">Rủi ro — bảo mật, quy định, vòng đời, nguồn cung<span class="num">3</span><button type="button" class="fold" aria-expanded="true" aria-controls="2026-09-01_2026-09-30-s3-body" aria-label="Thu gọn hoặc mở rộng mục này" title="Thu gọn"></button></h2>
+<div class="secbody" id="2026-09-01_2026-09-30-s3-body">
+<section class="topic" id="2026-09-01_2026-09-30-s3t0">
+  <h3>Vòng đời, phổ tần &amp; chuỗi cung ứng<span class="num">3</span></h3>
+  <div class="cards">
+    <div class="card feature" id="2026-09-01_2026-09-30-R-01" data-groups="fwa_5g consumer_devices" data-source="Báo Chính phủ">
+      <div class="meta"><span class="id">R-01</span><span class="src">16/09/2026 · Báo Chính phủ · breaking change</span><span class="chip grp">FWA &amp; 5G</span><span class="chip grp">Thiết bị tiêu dùng</span><span class="chip hi">cao</span><span class="chip life-eol">EOL: Module cellular 2G/3G</span><span class="chip act act-road">đưa vào roadmap</span><span class="chip act act-hot">cập nhật spec</span></div>
+      <h4><a href="https://baochinhphu.vn/viettel-chinh-thuc-tat-song-2g-dua-nguoi-dung-vao-ky-nguyen-mang-toc-do-cao-10226091609163217.htm">Việt Nam tắt 2G trên toàn quốc từ 15/09/2026</a></h4>
+      <div class="cmain"><p class="hook">Từ giữa tháng 9 mọi thiết bị chỉ có 2G ở Việt Nam đã mất sóng — thiết bị nào trong danh mục còn dựa vào 2G cho thoại, SMS hay dự phòng là hàng hỏng ngoài thực địa.</p><p>Từ 15/09/2026 Viettel dừng phát sóng 2G trên toàn quốc theo lộ trình của Bộ Khoa học và Công nghệ; toàn bộ khách hàng chuyển sang hạ tầng 4G/5G. VinaPhone và MobiFone cùng mốc; các nhà mạng hướng dẫn thuê bao bật VoLTE để không bị gián đoạn liên lạc.</p></div>
+      <div class="cfoot"><p class="corrob">Xác nhận chéo: <a href="https://vnpt.vn/gioi-thieu/tin-tuc/15-9-2026-he-thong-2g-se-ngung-hoat-dong-tai-viet-nam.html">VNPT</a> · <a href="https://cand.vn/tat-song-2g-mobifone-san-sang-cac-giai-phap-ho-tro-khach-hang-chuyen-doi-post822078.html">CAND — MobiFone</a> · <a href="https://cafef.vn/chinh-thuc-tat-song-2g-tu-15-9-nguoi-dan-can-chu-y-dieu-sau-de-tranh-bi-chan-2-chieu-nghe-goi-188260916062157536.chn">CafeF</a> · <a href="https://kenh14.vn/tat-ca-nguoi-dan-dung-thue-bao-viettel-vinaphone-mobiphone-chu-y-thay-doi-moi-nhat-tu-hom-nay-15-9-215260915110656145.chn">Kenh14</a> · <a href="https://www.24h.com.vn/cong-nghe-thong-tin/mobi-vinaviettel-ngat-song-2g-tu-15-9-tai-sao-smartphone-4g-cung-co-the-mat-song-c55a1791696.html">Tin tức 24h</a></p><button type="button" class="anbtn" aria-expanded="false" aria-controls="2026-09-01_2026-09-30-R-01-an">Phân tích</button></div>
+      <div class="cside" id="2026-09-01_2026-09-30-R-01-an" hidden><p class="whykeep"><b>Vì sao đáng giữ:</b> Mốc tắt 2G toàn quốc đã diễn ra — hết thời gian chuẩn bị cho thiết bị dùng 2G.</p><p class="decisionrow"><b>Nên làm gì:</b> Rà toàn bộ thiết bị đang bán và đã bán có module di động: thiết bị chỉ 2G phải thay hoặc cập nhật; thiết bị mới bắt buộc VoLTE/LTE Cat-1 bis trở lên.</p><p class="liferow"><b>Vòng đời:</b> <span class="life-eol">Module cellular 2G/3G (eol)</span> — 2G đã tắt toàn quốc từ 15/09/2026.</p></div>
+    </div>
+  </div>
+  <ul class="briefs">
+  <li id="2026-09-01_2026-09-30-R-03" data-groups="wifi_enterprise" data-source="Wi-Fi NOW Global"><span class="id">R-03</span> <a href="https://wifinowglobal.com/news-blog/roundup-cambium-enters-insolvency-fccs-conditional-ap-approvals-morse-micros-zephyr-kddi-colorado-convention-centre/"><b>Cambium Networks cắt 54% nhân sự toàn cầu, công ty con ở Anh vào giai đoạn phá sản</b></a> <span class="bmeta">19/09/2026 · Wi-Fi NOW Global</span><span class="chip grp">WiFi doanh nghiệp</span><br>Theo Wi-Fi NOW, Cambium Networks cắt 54% lực lượng lao động toàn cầu khi tái cơ cấu bước sang giai đoạn mất khả năng thanh toán ở Anh.</li>
+  <li id="2026-09-01_2026-09-30-R-05" data-groups="fwa_5g consumer_devices" data-source="PR Newswire (Manila Times)"><span class="id">R-05</span> <a href="https://www.manilatimes.net/2026/09/02/tmt-newswire/pr-newswire/fibocom-launches-ru311-5g-redcap-module-series-for-streamlined-5g-upgrades-in-mid-tier-iot/2416770"><b>Fibocom ra module 5G RedCap RU311 tương thích chân cắm để nâng cấp thiết bị IoT tầm trung</b></a> <span class="bmeta">02/09/2026 · PR Newswire (Manila Times)</span><span class="chip grp">FWA &amp; 5G</span><span class="chip grp">Thiết bị tiêu dùng</span><br>Fibocom ra dòng module 5G RedCap RU311 cho gateway công nghiệp, camera an ninh, ứng dụng ô tô hậu mãi, năng lượng và MiFi — nhắm nâng cấp lên 5G với ưu tiên kết nối ổn định, tiết kiệm điện, chi phí và rút ngắn phát triển.</li>
+  </ul>
+</section>
+</div>
+<h2 class="sectionhead" id="2026-09-01_2026-09-30-s5">Ngoài vùng quan tâm — đáng liếc<span class="num">2</span><button type="button" class="fold" aria-expanded="true" aria-controls="2026-09-01_2026-09-30-s5-body" aria-label="Thu gọn hoặc mở rộng mục này" title="Thu gọn"></button></h2>
+<div class="secbody" id="2026-09-01_2026-09-30-s5-body">
+<section class="topic" id="2026-09-01_2026-09-30-s5t0">
+  <h3>Ngoài vùng quan tâm — đáng liếc<span class="num">2</span></h3>
+  <ul class="briefs">
+  <li id="2026-09-01_2026-09-30-R-41" data-groups="boi_canh_nganh" data-source="IoT Business News"><span class="id">R-41</span> <a href="https://iotbusinessnews.com/2026/09/25/hubble-network-opens-satellite-connectivity-to-bluetooth-iot-devices/"><b>Hubble Network mở kết nối vệ tinh cho thiết bị Bluetooth IoT thông thường</b></a> <span class="bmeta">25/09/2026 · IoT Business News</span><span class="chip grp grp-ctx">Bối cảnh ngành</span><br>Hubble Network mở dịch vụ kết nối vệ tinh cho thiết bị IoT dùng Bluetooth (theo tiêu đề bài).</li>
+  <li id="2026-09-01_2026-09-30-R-42" data-groups="boi_canh_nganh" data-source="Broadband TV News"><span class="id">R-42</span> <a href="https://www.broadbandtvnews.com/2026/09/28/indonesia-begins-testing-direct-tv-broadcasts-to-phones-via-5g-broadcast/"><b>Indonesia bắt đầu thử phát truyền hình trực tiếp tới điện thoại qua 5G Broadcast</b></a> <span class="bmeta">28/09/2026 · Broadband TV News</span><span class="chip grp grp-ctx">Bối cảnh ngành</span><br>Indonesia bắt đầu thử phát truyền hình trực tiếp tới điện thoại bằng 5G Broadcast (theo tiêu đề bài).</li>
+  </ul>
+</section>
+</div>
+<h2 class="sectionhead" id="2026-09-01_2026-09-30-upcoming">Lịch sắp tới — cần theo dõi<button type="button" class="fold" aria-expanded="true" aria-controls="2026-09-01_2026-09-30-upcoming-body" aria-label="Thu gọn hoặc mở rộng mục này" title="Thu gọn"></button></h2><div class="secbody" id="2026-09-01_2026-09-30-upcoming-body">
+<div class="tablewrap"><table><thead><tr><th>Mốc</th><th>Sự kiện</th><th>Vì sao đáng theo dõi</th></tr></thead><tbody>
+    <tr><td class="when">09/10/2026</td><td>Đóng thầu gói thuê hạ tầng camera Ezviz/JF của Viettel Telecom</td><td>R-28</td></tr>
+    <tr><td class="when">13/10/2026</td><td>Đóng thầu MAN-E Khánh Hòa và nâng cấp Mentor của VNPT Net</td><td>R-38, R-37</td></tr>
+    <tr><td class="when">16/10/2026</td><td>Đóng thầu hệ thống HSS của VNPT Net</td><td>R-36</td></tr>
+    <tr><td class="when">19/10/2026</td><td>Đóng thầu hai gói vô tuyến 5G và phân hệ quản lý cấu hình của VNPT Net</td><td>R-31, R-32, R-34</td></tr>
+    <tr><td class="when">10/2026</td><td>ASUS bán router Wi-Fi 8 toàn cầu</td><td>R-15</td></tr>
+    <tr><td class="when">Quý IV/2026</td><td>VNPT Net tổ chức lựa chọn nhà thầu Site Router cho 5G vùng MAN-E Huawei (dự toán 143 tỷ)</td><td>R-33</td></tr>
+</tbody></table></div>
+</div>
+<h2 class="sectionhead" id="2026-09-01_2026-09-30-rings">Bảng radar rings<button type="button" class="fold" aria-expanded="true" aria-controls="2026-09-01_2026-09-30-rings-body" aria-label="Thu gọn hoặc mở rộng mục này" title="Thu gọn"></button></h2>
+<div class="secbody" id="2026-09-01_2026-09-30-rings-body">
+<dl class="ringkey"><dt><i class="dot" style="background:var(--adopt)"></i>Adopt</dt><dd>Đã chín và đã có bằng chứng ngoài thị trường. Dùng được cho thiết kế mới ngay, không cần chứng minh thêm.</dd><dt><i class="dot" style="background:var(--trial)"></i>Trial</dt><dd>Đủ tin cậy để thử trên một sản phẩm hoặc dự án thật, chấp nhận rủi ro có kiểm soát. Chưa phải mặc định cho mọi dòng.</dd><dt><i class="dot" style="background:var(--assess)"></i>Assess</dt><dd>Đáng tìm hiểu và theo dõi, chưa cam kết nguồn lực. Cần thêm bằng chứng hoặc một mốc cụ thể trước khi đưa vào roadmap.</dd><dt><i class="dot" style="background:var(--hold)"></i>Hold</dt><dd>Không dùng cho thiết kế mới. Sản phẩm đang chạy thì lên kế hoạch thay thế hoặc thoát dần.</dd></dl><div class="tablewrap"><table class="ringtable"><thead><tr><th>Công nghệ</th><th>Ring</th><th>Thay đổi</th><th>Ghi chú</th></tr></thead>
+<tbody>
+    <tr><td>XGS-PON + Wi-Fi 7 (ONT/gateway gia đình)</td><td><span class="ringtag" style="background:var(--adopt)">ADOPT</span></td><td><span>—</span></td><td>Kỳ 09/2026: VNPT ký CESA với Qualcomm cho nền XGS-PON tích hợp Wi-Fi 7 và Wi-Fi 8 (R-27).</td></tr>
+    <tr><td>prplOS làm nền tảng phần mềm CPE</td><td><span class="ringtag" style="background:var(--trial)">TRIAL</span></td><td><span>—</span></td><td>Kỳ 09/2026: DNA Phần Lan chạy gateway trọn bộ phần mềm prpl (R-19).</td></tr>
+    <tr><td>5G RedCap</td><td><span class="ringtag" style="background:var(--trial)">TRIAL</span></td><td><span>—</span></td><td>Kỳ 09/2026: Fibocom ra module RedCap RU311 thay module LTE Cat.4 (R-05).</td></tr>
+    <tr><td>AI trên gateway gia đình</td><td><span class="ringtag" style="background:var(--adopt)">ADOPT</span></td><td><span>—</span></td><td>Kỳ 09/2026: CESA VNPT–Qualcomm gồm AI gateway và camera AI (R-27); Anker MindBase chạy AI tại chỗ (R-25).</td></tr>
+    <tr><td>Wi-Fi 8 (802.11bn)</td><td><span class="ringtag" style="background:var(--trial)">TRIAL</span></td><td><span>—</span></td><td>Kỳ 09/2026: TP-Link ra router Archer 8 Ultra và mesh Deco 8 Ultra tại IFA, mở đặt trước 30/09 (R-13, R-14); ASUS bán router Wi-Fi 8 ở Canada, toàn cầu tháng 10 (R-15).</td></tr>
+    <tr><td>Suzi (Zigbee 4.0 sub-GHz)</td><td><span class="ringtag" style="background:var(--assess)">ASSESS</span></td><td><span>—</span></td><td>Kỳ 09/2026: CSA mở chứng nhận Suzi, Exegin trong nhóm hãng đầu tiên được chứng nhận (R-23).</td></tr>
+    <tr><td>UWB trong khóa và cảm biến nhà thông minh</td><td><span class="ringtag" style="background:var(--trial)">TRIAL</span></td><td><span>—</span></td><td>Kỳ 09/2026: ULTRALOQ ra ba khóa UWB kèm Aliro và Matter (R-24).</td></tr>
+    <tr><td>50G-PON</td><td><span class="ringtag" style="background:var(--assess)">ASSESS</span></td><td><span>—</span></td><td>Kỳ 09/2026: Sercomm ra dải ONU 50G PON (R-07); ZTE–Antel, Calix–Astound, Vodafone–Nokia thử 50G (R-08, R-09, R-10).</td></tr>
+    <tr><td>Quản lý WLAN phụ thuộc hoàn toàn đám mây nhà cung cấp</td><td><span class="ringtag" style="background:var(--hold)">HOLD</span></td><td><span>—</span></td><td>Kỳ 09/2026: Cambium cắt 54% nhân sự, công ty con ở Anh vào giai đoạn mất khả năng thanh toán (R-03).</td></tr>
+    <tr><td>Wi-Fi 7 doanh nghiệp (enterprise WLAN)</td><td><span class="ringtag" style="background:var(--adopt)">ADOPT</span></td><td><span>—</span></td><td>Kỳ 09/2026: Dell&#x27;Oro — Wi-Fi 7 vượt 50% thị trường, kỷ lục hơn 10 triệu AP quý 2 (R-16); IDC — Wi-Fi 7 chiếm 53% doanh thu AP doanh nghiệp quý 2 (R-17).</td></tr>
+    <tr><td>2G GSM</td><td><span class="ringtag" style="background:var(--hold)">HOLD</span></td><td><span>—</span></td><td>Kỳ 09/2026: 2G tắt trên toàn quốc từ 15/09/2026 (R-01).</td></tr>
+    <tr><td>LTE Cat-1 bis</td><td><span class="ringtag" style="background:var(--adopt)">ADOPT</span></td><td><span>—</span></td><td>Kỳ 09/2026: Cat 1 bis dẫn đầu lô module IoT di động nửa đầu 2026, tăng 15% (R-04); LTSCT ra LCC40 (R-06).</td></tr>
+    <tr><td>SGP.32 (eSIM IoT)</td><td><span class="ringtag" style="background:var(--assess)">ASSESS</span></td><td><span>—</span></td><td>Kỳ 09/2026: NTT DOCOMO BUSINESS hỗ trợ SGP.32 trên nền IoT toàn cầu (R-21).</td></tr>
+</tbody>
+<tbody><tr class="carriedrow"><td colspan="4"><button type="button" class="rowsbtn" aria-expanded="false" aria-controls="2026-09-01_2026-09-30-rings-carried">Không đổi trong kỳ<span class="num">11</span></button></td></tr></tbody>
+<tbody id="2026-09-01_2026-09-30-rings-carried" hidden>
+    <tr><td>Matter</td><td><span class="ringtag" style="background:var(--adopt)">ADOPT</span></td><td><span>—</span></td><td>Giữ Adopt. Matter 1.6 (SDK v1.6.0.0) phát hành 17/06/2026 cùng Product Security 1.1: chuẩn hoá Joint Fabric (một thiết bị thuộc nhiều hệ sinh thái) và ghép nối bằng chạm NFC.</td></tr>
+    <tr><td>USP / TR-369</td><td><span class="ringtag" style="background:var(--adopt)">ADOPT</span></td><td><span>—</span></td><td>Giữ Adopt. Chuỗi lỗi chạy lệnh từ xa qua TR-069/CWMP lặp lại kỳ này (CVE-2026-15427/15428) càng củng cố việc chọn USP cho thiết kế quản lý thiết bị mới.</td></tr>
+    <tr><td>SBOM &amp; secure-by-design</td><td><span class="ringtag" style="background:var(--adopt)">ADOPT</span></td><td><span>—</span></td><td>Giữ Adopt. Nhà cung chipset bắt đầu bán &#x27;hồ sơ tuân thủ&#x27; cùng chip: MaxLinear Topaz quảng bá secure-by-design hỗ trợ NIST IR 8425A, RED và CRA (06/10).</td></tr>
+    <tr><td>FTTR (Fiber To The Room)</td><td><span class="ringtag" style="background:var(--trial)">TRIAL</span></td><td><span>—</span></td><td>Giữ Trial nhưng quy mô đã khác: China Telecom mở gói mua tập trung 30 triệu bộ FTTR (3,5 tỷ NDT); Fiberhome trúng gói FTTR-B Wi-Fi 7 (11/06), ZTE trúng FTTR-B Quảng Đông đợt 3 (15/08) và ra giải pháp FTTR-B tất cả trong một cho SME. VNPT Technology vẫn chưa có sản phẩm FTTR-B.</td></tr>
+    <tr><td>AI biên tích hợp trong module cellular</td><td><span class="ringtag" style="background:var(--assess)">ASSESS</span></td><td><span>—</span></td><td>Mới lên radar. Telit Cinterion đưa suy luận AI vào thẳng module (09/2026) — nếu thành phổ biến thì bớt được một chip trong BOM camera.</td></tr>
+    <tr><td>MoCA Access cho MDU</td><td><span class="ringtag" style="background:var(--assess)">ASSESS</span></td><td><span>—</span></td><td>Giữ Assess, thêm rủi ro nhà cung: InCoax mất kênh bán qua Nokia, chuyển sang bán trực tiếp, cắt chi phí phát triển và cần vốn mới trước cuối 2026 (05/10).</td></tr>
+    <tr><td>TR-069 (CWMP)</td><td><span class="ringtag" style="background:var(--hold)">HOLD</span></td><td><span>—</span></td><td>Giữ Hold. Kỳ thứ hai liên tiếp có lỗi chạy lệnh từ xa qua giao diện TR-069/CWMP trên gateway nhà mạng (CVE-2026-15427 mức 8,6 trên Archer VX1800v, CVE-2026-15428 trên VX800v).</td></tr>
+    <tr><td>FRMCS (kế nhiệm GSM-R)</td><td><span class="ringtag" style="background:var(--assess)">ASSESS</span></td><td><span>—</span></td><td>Quectel đã có module RG660Qx bản LGA hỗ trợ băng n100/n101 cho thử nghiệm sớm — chưa chạm dòng sản phẩm nào của VNPT Technology nhưng đáng theo dõi song song với mục GSM-R trong eol_watchlist.</td></tr>
+    <tr><td>802.11bp / AMP (Wi-Fi cho cảm biến không pin)</td><td><span class="ringtag" style="background:var(--assess)">ASSESS</span></td><td><span>—</span></td><td>Mới lên radar qua quét mở. TGbp ở Draft 0.50, bỏ phiếu WG lần đầu trên Draft 1.0 dự kiến 9/2026, phê duyệt cuối dự kiến 3/2028. Câu hỏi chặn chưa phải độ chín mà là ngân sách nguồn của AP khi phải kiêm vai trò phát năng lượng.</td></tr>
+    <tr><td>3G UMTS</td><td><span class="ringtag" style="background:var(--hold)">HOLD</span></td><td><span>—</span></td><td>Thông tư 29/2026/TT-BKHCN chốt việc dùng băng 900 MHz cho 3G kết thúc 14/09/2028. Trên thực địa Viettel đã thuê kho chứa vật tư thiết bị 3G thu hồi từ 34 tỉnh/thành ngay trong 2026.</td></tr>
+    <tr><td>An toàn cơ bản thiết bị IoT theo ETSI EN 303 645</td><td><span class="ringtag" style="background:var(--adopt)">ADOPT</span></td><td><span>—</span></td><td>Lên radar thẳng vào Adopt vì đã thành nghĩa vụ pháp lý: QCVN 11:2026/BCA (hiệu lực 01/07/2026) tham chiếu EN 303 645 V2.1.1 và TS 103 701 V1.1.1 cho camera IP bán tại Việt Nam.</td></tr>
+</tbody>
+</table></div>
+</div>
+<details class="scan trend" id="2026-09-01_2026-09-30-trend"><summary>Xu hướng xuyên kỳ</summary>
+<p class="gfnote" style="display:block">Cột <b>xu hướng</b> tạm ẩn: nó so 3 tháng gần nhất với 3 tháng liền trước, cần ít nhất 6 tháng có tin (hiện 5). Hai bảng đếm bên dưới vẫn đọc được bình thường.</p>
+<h3>Nhóm sản phẩm × tháng</h3><p class="gfnote" style="display:block">Số tin (đã khử trùng theo URL) chạm tới nhóm, theo tháng đăng của tin.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-05</th><th>26-06</th><th>26-07</th><th>26-08</th><th>26-09</th></tr></thead><tbody>
+<tr><td class="tl">PON / Truy nhập quang</td><td class="tn">5</td><td class="tn">7</td><td class="tn">4</td><td class="tn">5</td><td class="tn">9</td></tr>
+<tr><td class="tl">Mesh WiFi &amp; Gateway gia đình</td><td class="tn">15</td><td class="tn">12</td><td class="tn">12</td><td class="tn">11</td><td class="tn">8</td></tr>
+<tr><td class="tl">WiFi doanh nghiệp</td><td class="tn">3</td><td class="tn">7</td><td class="tn">3</td><td class="tn">2</td><td class="tn">6</td></tr>
+<tr><td class="tl">FWA &amp; 5G</td><td class="tn">3</td><td class="tn">5</td><td class="tn">8</td><td class="tn">5</td><td class="tn">6</td></tr>
+<tr><td class="tl">Thiết bị tiêu dùng</td><td class="tn">4</td><td class="tn">12</td><td class="tn">7</td><td class="tn">10</td><td class="tn">7</td></tr>
+<tr><td class="tl">Smart Home / Nền tảng IoT</td><td class="tn">1</td><td class="tn">9</td><td class="tn">7</td><td class="tn">4</td><td class="tn">4</td></tr>
+<tr><td class="tl">Đấu thầu &amp; nhu cầu thị trường</td><td class="tn">3</td><td class="tn">7</td><td class="tn">6</td><td class="tn">6</td><td class="tn">13</td></tr>
+<tr><td class="tl">Xuyên suốt (mọi dòng)</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td><td class="tn z"></td></tr>
+<tr><td class="tl">Bối cảnh ngành</td><td class="tn">4</td><td class="tn">4</td><td class="tn">3</td><td class="tn">3</td><td class="tn">2</td></tr>
+</tbody></table></div>
+<h3>Thuật ngữ × tháng</h3><p class="gfnote" style="display:block">Khớp cơ học <code>known_terms</code> và tên <code>radar_rings</code> trong tiêu đề/tóm tắt/why_keep. Một thuật ngữ xuất hiện ba tháng liền khác hẳn một thuật ngữ chỉ xuất hiện một lần.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-05</th><th>26-06</th><th>26-07</th><th>26-08</th><th>26-09</th></tr></thead><tbody>
+<tr><td class="tl">Matter</td><td class="tn z"></td><td class="tn">2</td><td class="tn">2</td><td class="tn">2</td><td class="tn">2</td></tr>
+<tr><td class="tl">MAN-E</td><td class="tn">2</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td></tr>
+<tr><td class="tl">SGP.32</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td><td class="tn">1</td><td class="tn">1</td></tr>
+<tr><td class="tl">DVB-I</td><td class="tn">2</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">FTTR-B</td><td class="tn z"></td><td class="tn">2</td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">eRedCap</td><td class="tn z"></td><td class="tn">1</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">QCVN 11:2026/BCA</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">RedCap</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Joint Fabric</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Aliro</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Viettel Tammi</td><td class="tn z"></td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">5G RedCap</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">50G-PON</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">NB-IoT</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">NTN</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">IMT-2030</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">Matter Service API</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">TR-517</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Suzi</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Amlogic S905D5</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Operation CameraSwarm</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Viettel GIGA</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Starlink UTR-261</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Thread Direct</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">prplWare</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">OpenSync</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Hubble Network</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Thông tư 48/2026/TT-BCA</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">IEEE 3559-2026</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">ETSI EN 304 631</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
+</tbody></table></div>
+<h3>Ring qua các kỳ</h3><ul class="ringhist"><li><b>2G GSM</b> <span class="ringtag" style="background:var(--hold)">HOLD</span> <small>26-05</small></li><li><b>3G UMTS</b> <span class="ringtag" style="background:var(--hold)">HOLD</span> <small>26-05</small></li><li><b>50G-PON</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>5G RedCap</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li><li><b>802.11bp / AMP (Wi-Fi cho cảm biến không pin)</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>AI biên tích hợp trong module cellular</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>AI trên gateway gia đình</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>An toàn cơ bản thiết bị IoT theo ETSI EN 303 645</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>FRMCS (kế nhiệm GSM-R)</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>FTTR (Fiber To The Room)</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li><li><b>LTE Cat-1 bis</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>Matter</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>MoCA Access cho MDU</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>Quản lý WLAN phụ thuộc hoàn toàn đám mây nhà cung cấp</b> <span class="ringtag" style="background:var(--hold)">HOLD</span> <small>26-05</small></li><li><b>SBOM &amp; secure-by-design</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>SGP.32 (eSIM IoT)</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>Suzi (Zigbee 4.0 sub-GHz)</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>TR-069 (CWMP)</b> <span class="ringtag" style="background:var(--hold)">HOLD</span> <small>26-05</small></li><li><b>USP / TR-369</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>UWB trong khóa và cảm biến nhà thông minh</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li><li><b>Wi-Fi 7 doanh nghiệp (enterprise WLAN)</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>Wi-Fi 8 (802.11bn)</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li><li><b>XGS-PON + Wi-Fi 7 (ONT/gateway gia đình)</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>prplOS làm nền tảng phần mềm CPE</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li></ul>
+</details>
+<details class="scan" id="2026-09-01_2026-09-30-terms"><summary>Tín hiệu mới</summary><ul class="notes">
+  <li><b>CESA (Customer Engineering Services Agreement)</b> — Thỏa thuận kỹ thuật VNPT ký với Qualcomm cho XGS-PON + Wi-Fi 7/8, AI gateway, camera AI. <a href="https://baotuyenquang.com.vn/khoa-hoc-cong-nghe/202609/vnpt-va-qualcomm-technologies-mo-rong-hop-tac-chien-luoc-thuc-day-doi-moi-ai-bien-dd9455a/">nguồn</a> · <a href="https://baomoi.com/vnpt-hop-tac-qualcomm-phat-trien-loat-san-pham-ai-the-he-moi-huong-toi-thi-truong-toan-cau-c56128237.epi">nguồn</a></li>
+  <li><b>StabilityEngine (TP-Link)</b> — Bộ tính năng Wi-Fi 8 của TP-Link (UEQM, MCS mới, 2×LDPC) nhắm thông lượng ổn định thay vì tốc độ đỉnh. <a href="https://www.techpowerup.com/353271/tp-link-opens-pre-orders-for-archer-8-ultra-its-first-wi-fi-8-router">nguồn</a> · <a href="https://wifinowglobal.com/news-and-blog/tp-link-bets-big-on-wi%E2%80%91fi-8-with-expansive-product-lineup-archer-8-ultra-preorders-starting-september-30/">nguồn</a></li>
+  <li><b>HSS</b> — Home Subscriber Server — VNPT Net mời thầu hệ thống HSS (lõi di động). <a href="https://bidwinner.info/4.0/chi-tiet-goi-thau/12649534">nguồn</a> · <a href="https://bidwinner.info/4.0/chi-tiet-goi-thau/12648027">nguồn</a></li>
+  <li><b>Mentor (hệ thống của VNPT Net)</b> <span class="chip warn">ứng viên — 1 nguồn</span> — Hệ thống VNPT Net mời thầu nâng cấp 45,2 tỷ — chưa rõ chức năng từ tiêu đề. <a href="https://bidwinner.info/4.0/chi-tiet-goi-thau/12631878">nguồn</a></li>
+</ul></details>
+<details class="scan"><summary>Ghi chú quét</summary><ul class="notes">
+  <li><b>Số tin:</b> kỳ này giữ 42 tin. Ba lý do khiến nhiều: 13 tin đấu thầu, mỗi gói một tin (VNPT Net mở loạt gói mạng cuối tháng 9, cộng kết quả hai gói trạm 5G của Viettel); sáu tin 50G-PON khác nhau trong cùng tháng; và Wi-Fi 8 bước sang giai đoạn bán hàng. Phần lớn tin <code>medium</code> để <code>brief</code>.</li>
+  <li><b>Không có CVE nào trong khung:</b> <code>cve_scan.py</code> trả 0 CVE cho 14 hãng tháng 9 — khớp với lần quét khung 06–10/2026 trước đó (không có CVE nào ngày tháng 9).</li>
+  <li><b>Câu query chạm trần:</b> "Wi-Fi 7" 2026 (33 bài, giữ 25) và "Wi-Fi 8" 2026 (32 bài, giữ 25) — mất 15 bài cũ nhất trong khung.</li>
+  <li><b>bidwinner:</b> 20/37 câu trả 0 bản ghi. Cổng Viettel quét trọn khung (7,3 phút, 225 lượt gọi, 4 lần thử lại, bỏ 10 gói huỷ hoặc thông báo thử). Không câu nào chạm trần số trang; <code>tender_incomplete</code> rỗng.</li>
+  <li><b>Gói thầu của VNPT chỉ vào radar theo ngày đăng, không có nhà thầu trúng và giá trúng</b> — bidwinner ẩn danh nhà thầu. Gói HSS của VNPT Net (R-36) có hai thông báo cùng tên và giá gói ghi 1,81 triệu đồng — để một tin, chưa kiểm được con số.</li>
+  <li><b>Nguồn lỗi:</b> Telecoms.com trả HTTP 403. <b>Nguồn cũ (stale):</b> GitHub / srsran/srsRAN_Project, GitHub / open5gs/open5gs (20/06/2026), Wi-Fi Alliance Press Releases (11/08/2026).</li>
+  <li><b>Tin chỉ đọc được tiêu đề:</b> ZTE–Antel, Calix–Astound, Vodafone–Nokia, Semtech, ASUS Canada, DNA prpl, Ubee OpenSync, Hitron, Skyworth, Hubble Network, Indonesia 5G Broadcast — trang trả 403/không tải được hoặc chỉ có tiêu đề; tóm tắt nói rõ điều đó.</li>
+  <li><b>Link Google News:</b> 13 link chưa giải mã (url_unresolved); không tin nào trong báo cáo dùng link Google.</li>
+  <li><b>Độ phủ đối thủ:</b> Viettel có tin tắt 2G, cổng thầu (5G, camera Ezviz/JF, Viettel Solutions); VNPT có CESA với Qualcomm, loạt gói VNPT Net và VNPT-I; MobiFone chỉ có tin tắt 2G; FPT, CMC, SCTV, VTVcab không có tin sản phẩm thiết bị trong khung.</li>
+  <li><b>Bước 6 — thuật ngữ:</b> 4 thuật ngữ trong <code>new_terms</code>; không append vào <code>search_terms</code> (CESA, StabilityEngine là tên thoả thuận/tính năng; HSS và Mentor là hệ thống mạng lõi — HSS đã có trong <code>network_terms</code> của nguồn thầu). Mục thuật ngữ mới của danh sách rút gọn toàn là mã gói/đơn vị/địa danh (HKVT, TRR-VTT, CLOUD, Dominicana, Minishelter).</li>
+  <li><b>Bước 13:</b> khung kết thúc 30/09/2026, sớm hơn <code>last_seen</code> trong config — <code>update_config.py</code> giữ nguyên vòng, ghi chú và <code>last_seen</code>; bảng vòng ở báo cáo này chỉ ghi tin của tháng 9.</li>
+  <li><b>Bước 1a:</b> không hãng nào trong <code>vendor_catalogs</code> quá 6 tháng — không quét lại.</li>
+</ul></details>
+</article>
 <article class="period" id="2026-08-01_2026-08-31" hidden data-label="01/08 – 31/08/2026" data-range="01/08 – 31/08/2026" data-gcounts='{&quot;xuyen_suot&quot;: 2, &quot;fwa_5g&quot;: 5, &quot;consumer_devices&quot;: 10, &quot;wifi_enterprise&quot;: 2, &quot;wifi_home&quot;: 11, &quot;smart_home_platform&quot;: 4, &quot;pon_access&quot;: 5, &quot;boi_canh_nganh&quot;: 3, &quot;dau_thau&quot;: 6}'>
 <div class="stats"><div><span class="v" data-stat="items">34</span><span class="k">tin</span></div><div><span class="v" data-stat="sources">23</span><span class="k">nguồn</span></div><div><span class="v" data-stat="upcoming">5</span><span class="k">mốc sắp tới</span></div></div>
 <h2 class="sectionhead actions-head" id="2026-08-01_2026-08-31-actions">Điểm tin<button type="button" class="fold" aria-expanded="true" aria-controls="2026-08-01_2026-08-31-actions-body" aria-label="Thu gọn hoặc mở rộng mục này" title="Thu gọn"></button></h2><div class="secbody" id="2026-08-01_2026-08-31-actions-body">
@@ -918,47 +1229,49 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
 </table></div>
 </div>
 <details class="scan trend" id="2026-08-01_2026-08-31-trend"><summary>Xu hướng xuyên kỳ</summary>
-<p class="gfnote" style="display:block">Cột <b>xu hướng</b> tạm ẩn: nó so 3 tháng gần nhất với 3 tháng liền trước, cần ít nhất 6 tháng có tin (hiện 4). Hai bảng đếm bên dưới vẫn đọc được bình thường.</p>
-<h3>Nhóm sản phẩm × tháng</h3><p class="gfnote" style="display:block">Số tin (đã khử trùng theo URL) chạm tới nhóm, theo tháng đăng của tin.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-05</th><th>26-06</th><th>26-07</th><th>26-08</th></tr></thead><tbody>
-<tr><td class="tl">PON / Truy nhập quang</td><td class="tn">5</td><td class="tn">7</td><td class="tn">4</td><td class="tn">5</td></tr>
-<tr><td class="tl">Mesh WiFi &amp; Gateway gia đình</td><td class="tn">15</td><td class="tn">12</td><td class="tn">12</td><td class="tn">11</td></tr>
-<tr><td class="tl">WiFi doanh nghiệp</td><td class="tn">3</td><td class="tn">7</td><td class="tn">3</td><td class="tn">2</td></tr>
-<tr><td class="tl">FWA &amp; 5G</td><td class="tn">3</td><td class="tn">5</td><td class="tn">8</td><td class="tn">5</td></tr>
-<tr><td class="tl">Thiết bị tiêu dùng</td><td class="tn">4</td><td class="tn">12</td><td class="tn">7</td><td class="tn">10</td></tr>
-<tr><td class="tl">Smart Home / Nền tảng IoT</td><td class="tn">1</td><td class="tn">9</td><td class="tn">7</td><td class="tn">4</td></tr>
-<tr><td class="tl">Đấu thầu &amp; nhu cầu thị trường</td><td class="tn">3</td><td class="tn">9</td><td class="tn">6</td><td class="tn">6</td></tr>
-<tr><td class="tl">Xuyên suốt (mọi dòng)</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td></tr>
-<tr><td class="tl">Bối cảnh ngành</td><td class="tn">4</td><td class="tn">4</td><td class="tn">3</td><td class="tn">3</td></tr>
+<p class="gfnote" style="display:block">Cột <b>xu hướng</b> tạm ẩn: nó so 3 tháng gần nhất với 3 tháng liền trước, cần ít nhất 6 tháng có tin (hiện 5). Hai bảng đếm bên dưới vẫn đọc được bình thường.</p>
+<h3>Nhóm sản phẩm × tháng</h3><p class="gfnote" style="display:block">Số tin (đã khử trùng theo URL) chạm tới nhóm, theo tháng đăng của tin.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-05</th><th>26-06</th><th>26-07</th><th>26-08</th><th>26-09</th></tr></thead><tbody>
+<tr><td class="tl">PON / Truy nhập quang</td><td class="tn">5</td><td class="tn">7</td><td class="tn">4</td><td class="tn">5</td><td class="tn">9</td></tr>
+<tr><td class="tl">Mesh WiFi &amp; Gateway gia đình</td><td class="tn">15</td><td class="tn">12</td><td class="tn">12</td><td class="tn">11</td><td class="tn">8</td></tr>
+<tr><td class="tl">WiFi doanh nghiệp</td><td class="tn">3</td><td class="tn">7</td><td class="tn">3</td><td class="tn">2</td><td class="tn">6</td></tr>
+<tr><td class="tl">FWA &amp; 5G</td><td class="tn">3</td><td class="tn">5</td><td class="tn">8</td><td class="tn">5</td><td class="tn">6</td></tr>
+<tr><td class="tl">Thiết bị tiêu dùng</td><td class="tn">4</td><td class="tn">12</td><td class="tn">7</td><td class="tn">10</td><td class="tn">7</td></tr>
+<tr><td class="tl">Smart Home / Nền tảng IoT</td><td class="tn">1</td><td class="tn">9</td><td class="tn">7</td><td class="tn">4</td><td class="tn">4</td></tr>
+<tr><td class="tl">Đấu thầu &amp; nhu cầu thị trường</td><td class="tn">3</td><td class="tn">7</td><td class="tn">6</td><td class="tn">6</td><td class="tn">13</td></tr>
+<tr><td class="tl">Xuyên suốt (mọi dòng)</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td><td class="tn z"></td></tr>
+<tr><td class="tl">Bối cảnh ngành</td><td class="tn">4</td><td class="tn">4</td><td class="tn">3</td><td class="tn">3</td><td class="tn">2</td></tr>
 </tbody></table></div>
-<h3>Thuật ngữ × tháng</h3><p class="gfnote" style="display:block">Khớp cơ học <code>known_terms</code> và tên <code>radar_rings</code> trong tiêu đề/tóm tắt/why_keep. Một thuật ngữ xuất hiện ba tháng liền khác hẳn một thuật ngữ chỉ xuất hiện một lần.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-05</th><th>26-06</th><th>26-07</th><th>26-08</th></tr></thead><tbody>
-<tr><td class="tl">Matter</td><td class="tn z"></td><td class="tn">2</td><td class="tn">2</td><td class="tn">2</td></tr>
-<tr><td class="tl">DVB-I</td><td class="tn">2</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">eRedCap</td><td class="tn z"></td><td class="tn">1</td><td class="tn">1</td><td class="tn">1</td></tr>
-<tr><td class="tl">SGP.32</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td><td class="tn">1</td></tr>
-<tr><td class="tl">MAN-E</td><td class="tn">2</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">QCVN 11:2026/BCA</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">FTTR-B</td><td class="tn z"></td><td class="tn">2</td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">Joint Fabric</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">Viettel Tammi</td><td class="tn z"></td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">NB-IoT</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">RedCap</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">NTN</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">IMT-2030</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">Matter Service API</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">TR-517</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">Aliro</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">Operation CameraSwarm</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">Viettel GIGA</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">Starlink UTR-261</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">Thread Direct</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">prplWare</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">Thông tư 48/2026/TT-BCA</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">IEEE 3559-2026</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">ETSI EN 304 631</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">Settop box with Smart Speaker</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">5G RedCap</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">Wi-Fi 8 (802.11bn)</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">50G-PON</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<h3>Thuật ngữ × tháng</h3><p class="gfnote" style="display:block">Khớp cơ học <code>known_terms</code> và tên <code>radar_rings</code> trong tiêu đề/tóm tắt/why_keep. Một thuật ngữ xuất hiện ba tháng liền khác hẳn một thuật ngữ chỉ xuất hiện một lần.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-05</th><th>26-06</th><th>26-07</th><th>26-08</th><th>26-09</th></tr></thead><tbody>
+<tr><td class="tl">Matter</td><td class="tn z"></td><td class="tn">2</td><td class="tn">2</td><td class="tn">2</td><td class="tn">2</td></tr>
+<tr><td class="tl">MAN-E</td><td class="tn">2</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td></tr>
+<tr><td class="tl">SGP.32</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td><td class="tn">1</td><td class="tn">1</td></tr>
+<tr><td class="tl">DVB-I</td><td class="tn">2</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">FTTR-B</td><td class="tn z"></td><td class="tn">2</td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">eRedCap</td><td class="tn z"></td><td class="tn">1</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">QCVN 11:2026/BCA</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">RedCap</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Joint Fabric</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Aliro</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Viettel Tammi</td><td class="tn z"></td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">5G RedCap</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">50G-PON</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">NB-IoT</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">NTN</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">IMT-2030</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">Matter Service API</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">TR-517</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Suzi</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Amlogic S905D5</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Operation CameraSwarm</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Viettel GIGA</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Starlink UTR-261</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Thread Direct</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">prplWare</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">OpenSync</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Hubble Network</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Thông tư 48/2026/TT-BCA</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">IEEE 3559-2026</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">ETSI EN 304 631</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
 </tbody></table></div>
 <h3>Ring qua các kỳ</h3><ul class="ringhist"><li><b>2G GSM</b> <span class="ringtag" style="background:var(--hold)">HOLD</span> <small>26-05</small></li><li><b>3G UMTS</b> <span class="ringtag" style="background:var(--hold)">HOLD</span> <small>26-05</small></li><li><b>50G-PON</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>5G RedCap</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li><li><b>802.11bp / AMP (Wi-Fi cho cảm biến không pin)</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>AI biên tích hợp trong module cellular</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>AI trên gateway gia đình</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>An toàn cơ bản thiết bị IoT theo ETSI EN 303 645</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>FRMCS (kế nhiệm GSM-R)</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>FTTR (Fiber To The Room)</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li><li><b>LTE Cat-1 bis</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>Matter</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>MoCA Access cho MDU</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>Quản lý WLAN phụ thuộc hoàn toàn đám mây nhà cung cấp</b> <span class="ringtag" style="background:var(--hold)">HOLD</span> <small>26-05</small></li><li><b>SBOM &amp; secure-by-design</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>SGP.32 (eSIM IoT)</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>Suzi (Zigbee 4.0 sub-GHz)</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>TR-069 (CWMP)</b> <span class="ringtag" style="background:var(--hold)">HOLD</span> <small>26-05</small></li><li><b>USP / TR-369</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>UWB trong khóa và cảm biến nhà thông minh</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li><li><b>Wi-Fi 7 doanh nghiệp (enterprise WLAN)</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>Wi-Fi 8 (802.11bn)</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li><li><b>XGS-PON + Wi-Fi 7 (ONT/gateway gia đình)</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>prplOS làm nền tảng phần mềm CPE</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li></ul>
 </details>
@@ -1207,47 +1520,49 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
 </table></div>
 </div>
 <details class="scan trend" id="2026-07-01_2026-07-31-trend"><summary>Xu hướng xuyên kỳ</summary>
-<p class="gfnote" style="display:block">Cột <b>xu hướng</b> tạm ẩn: nó so 3 tháng gần nhất với 3 tháng liền trước, cần ít nhất 6 tháng có tin (hiện 4). Hai bảng đếm bên dưới vẫn đọc được bình thường.</p>
-<h3>Nhóm sản phẩm × tháng</h3><p class="gfnote" style="display:block">Số tin (đã khử trùng theo URL) chạm tới nhóm, theo tháng đăng của tin.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-05</th><th>26-06</th><th>26-07</th><th>26-08</th></tr></thead><tbody>
-<tr><td class="tl">PON / Truy nhập quang</td><td class="tn">5</td><td class="tn">7</td><td class="tn">4</td><td class="tn">5</td></tr>
-<tr><td class="tl">Mesh WiFi &amp; Gateway gia đình</td><td class="tn">15</td><td class="tn">12</td><td class="tn">12</td><td class="tn">11</td></tr>
-<tr><td class="tl">WiFi doanh nghiệp</td><td class="tn">3</td><td class="tn">7</td><td class="tn">3</td><td class="tn">2</td></tr>
-<tr><td class="tl">FWA &amp; 5G</td><td class="tn">3</td><td class="tn">5</td><td class="tn">8</td><td class="tn">5</td></tr>
-<tr><td class="tl">Thiết bị tiêu dùng</td><td class="tn">4</td><td class="tn">12</td><td class="tn">7</td><td class="tn">10</td></tr>
-<tr><td class="tl">Smart Home / Nền tảng IoT</td><td class="tn">1</td><td class="tn">9</td><td class="tn">7</td><td class="tn">4</td></tr>
-<tr><td class="tl">Đấu thầu &amp; nhu cầu thị trường</td><td class="tn">3</td><td class="tn">9</td><td class="tn">6</td><td class="tn">6</td></tr>
-<tr><td class="tl">Xuyên suốt (mọi dòng)</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td></tr>
-<tr><td class="tl">Bối cảnh ngành</td><td class="tn">4</td><td class="tn">4</td><td class="tn">3</td><td class="tn">3</td></tr>
+<p class="gfnote" style="display:block">Cột <b>xu hướng</b> tạm ẩn: nó so 3 tháng gần nhất với 3 tháng liền trước, cần ít nhất 6 tháng có tin (hiện 5). Hai bảng đếm bên dưới vẫn đọc được bình thường.</p>
+<h3>Nhóm sản phẩm × tháng</h3><p class="gfnote" style="display:block">Số tin (đã khử trùng theo URL) chạm tới nhóm, theo tháng đăng của tin.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-05</th><th>26-06</th><th>26-07</th><th>26-08</th><th>26-09</th></tr></thead><tbody>
+<tr><td class="tl">PON / Truy nhập quang</td><td class="tn">5</td><td class="tn">7</td><td class="tn">4</td><td class="tn">5</td><td class="tn">9</td></tr>
+<tr><td class="tl">Mesh WiFi &amp; Gateway gia đình</td><td class="tn">15</td><td class="tn">12</td><td class="tn">12</td><td class="tn">11</td><td class="tn">8</td></tr>
+<tr><td class="tl">WiFi doanh nghiệp</td><td class="tn">3</td><td class="tn">7</td><td class="tn">3</td><td class="tn">2</td><td class="tn">6</td></tr>
+<tr><td class="tl">FWA &amp; 5G</td><td class="tn">3</td><td class="tn">5</td><td class="tn">8</td><td class="tn">5</td><td class="tn">6</td></tr>
+<tr><td class="tl">Thiết bị tiêu dùng</td><td class="tn">4</td><td class="tn">12</td><td class="tn">7</td><td class="tn">10</td><td class="tn">7</td></tr>
+<tr><td class="tl">Smart Home / Nền tảng IoT</td><td class="tn">1</td><td class="tn">9</td><td class="tn">7</td><td class="tn">4</td><td class="tn">4</td></tr>
+<tr><td class="tl">Đấu thầu &amp; nhu cầu thị trường</td><td class="tn">3</td><td class="tn">7</td><td class="tn">6</td><td class="tn">6</td><td class="tn">13</td></tr>
+<tr><td class="tl">Xuyên suốt (mọi dòng)</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td><td class="tn z"></td></tr>
+<tr><td class="tl">Bối cảnh ngành</td><td class="tn">4</td><td class="tn">4</td><td class="tn">3</td><td class="tn">3</td><td class="tn">2</td></tr>
 </tbody></table></div>
-<h3>Thuật ngữ × tháng</h3><p class="gfnote" style="display:block">Khớp cơ học <code>known_terms</code> và tên <code>radar_rings</code> trong tiêu đề/tóm tắt/why_keep. Một thuật ngữ xuất hiện ba tháng liền khác hẳn một thuật ngữ chỉ xuất hiện một lần.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-05</th><th>26-06</th><th>26-07</th><th>26-08</th></tr></thead><tbody>
-<tr><td class="tl">Matter</td><td class="tn z"></td><td class="tn">2</td><td class="tn">2</td><td class="tn">2</td></tr>
-<tr><td class="tl">DVB-I</td><td class="tn">2</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">eRedCap</td><td class="tn z"></td><td class="tn">1</td><td class="tn">1</td><td class="tn">1</td></tr>
-<tr><td class="tl">SGP.32</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td><td class="tn">1</td></tr>
-<tr><td class="tl">MAN-E</td><td class="tn">2</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">QCVN 11:2026/BCA</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">FTTR-B</td><td class="tn z"></td><td class="tn">2</td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">Joint Fabric</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">Viettel Tammi</td><td class="tn z"></td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">NB-IoT</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">RedCap</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">NTN</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">IMT-2030</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">Matter Service API</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">TR-517</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">Aliro</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">Operation CameraSwarm</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">Viettel GIGA</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">Starlink UTR-261</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">Thread Direct</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">prplWare</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">Thông tư 48/2026/TT-BCA</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">IEEE 3559-2026</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">ETSI EN 304 631</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">Settop box with Smart Speaker</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">5G RedCap</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">Wi-Fi 8 (802.11bn)</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">50G-PON</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<h3>Thuật ngữ × tháng</h3><p class="gfnote" style="display:block">Khớp cơ học <code>known_terms</code> và tên <code>radar_rings</code> trong tiêu đề/tóm tắt/why_keep. Một thuật ngữ xuất hiện ba tháng liền khác hẳn một thuật ngữ chỉ xuất hiện một lần.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-05</th><th>26-06</th><th>26-07</th><th>26-08</th><th>26-09</th></tr></thead><tbody>
+<tr><td class="tl">Matter</td><td class="tn z"></td><td class="tn">2</td><td class="tn">2</td><td class="tn">2</td><td class="tn">2</td></tr>
+<tr><td class="tl">MAN-E</td><td class="tn">2</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td></tr>
+<tr><td class="tl">SGP.32</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td><td class="tn">1</td><td class="tn">1</td></tr>
+<tr><td class="tl">DVB-I</td><td class="tn">2</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">FTTR-B</td><td class="tn z"></td><td class="tn">2</td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">eRedCap</td><td class="tn z"></td><td class="tn">1</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">QCVN 11:2026/BCA</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">RedCap</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Joint Fabric</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Aliro</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Viettel Tammi</td><td class="tn z"></td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">5G RedCap</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">50G-PON</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">NB-IoT</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">NTN</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">IMT-2030</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">Matter Service API</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">TR-517</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Suzi</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Amlogic S905D5</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Operation CameraSwarm</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Viettel GIGA</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Starlink UTR-261</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Thread Direct</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">prplWare</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">OpenSync</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Hubble Network</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Thông tư 48/2026/TT-BCA</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">IEEE 3559-2026</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">ETSI EN 304 631</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
 </tbody></table></div>
 <h3>Ring qua các kỳ</h3><ul class="ringhist"><li><b>2G GSM</b> <span class="ringtag" style="background:var(--hold)">HOLD</span> <small>26-05</small></li><li><b>3G UMTS</b> <span class="ringtag" style="background:var(--hold)">HOLD</span> <small>26-05</small></li><li><b>50G-PON</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>5G RedCap</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li><li><b>802.11bp / AMP (Wi-Fi cho cảm biến không pin)</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>AI biên tích hợp trong module cellular</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>AI trên gateway gia đình</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>An toàn cơ bản thiết bị IoT theo ETSI EN 303 645</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>FRMCS (kế nhiệm GSM-R)</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>FTTR (Fiber To The Room)</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li><li><b>LTE Cat-1 bis</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>Matter</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>MoCA Access cho MDU</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>Quản lý WLAN phụ thuộc hoàn toàn đám mây nhà cung cấp</b> <span class="ringtag" style="background:var(--hold)">HOLD</span> <small>26-05</small></li><li><b>SBOM &amp; secure-by-design</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>SGP.32 (eSIM IoT)</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>Suzi (Zigbee 4.0 sub-GHz)</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>TR-069 (CWMP)</b> <span class="ringtag" style="background:var(--hold)">HOLD</span> <small>26-05</small></li><li><b>USP / TR-369</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>UWB trong khóa và cảm biến nhà thông minh</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li><li><b>Wi-Fi 7 doanh nghiệp (enterprise WLAN)</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>Wi-Fi 8 (802.11bn)</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li><li><b>XGS-PON + Wi-Fi 7 (ONT/gateway gia đình)</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>prplOS làm nền tảng phần mềm CPE</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li></ul>
 </details>
@@ -1564,47 +1879,49 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
 </table></div>
 </div>
 <details class="scan trend" id="2026-06-01_2026-06-30-trend"><summary>Xu hướng xuyên kỳ</summary>
-<p class="gfnote" style="display:block">Cột <b>xu hướng</b> tạm ẩn: nó so 3 tháng gần nhất với 3 tháng liền trước, cần ít nhất 6 tháng có tin (hiện 4). Hai bảng đếm bên dưới vẫn đọc được bình thường.</p>
-<h3>Nhóm sản phẩm × tháng</h3><p class="gfnote" style="display:block">Số tin (đã khử trùng theo URL) chạm tới nhóm, theo tháng đăng của tin.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-05</th><th>26-06</th><th>26-07</th><th>26-08</th></tr></thead><tbody>
-<tr><td class="tl">PON / Truy nhập quang</td><td class="tn">5</td><td class="tn">7</td><td class="tn">4</td><td class="tn">5</td></tr>
-<tr><td class="tl">Mesh WiFi &amp; Gateway gia đình</td><td class="tn">15</td><td class="tn">12</td><td class="tn">12</td><td class="tn">11</td></tr>
-<tr><td class="tl">WiFi doanh nghiệp</td><td class="tn">3</td><td class="tn">7</td><td class="tn">3</td><td class="tn">2</td></tr>
-<tr><td class="tl">FWA &amp; 5G</td><td class="tn">3</td><td class="tn">5</td><td class="tn">8</td><td class="tn">5</td></tr>
-<tr><td class="tl">Thiết bị tiêu dùng</td><td class="tn">4</td><td class="tn">12</td><td class="tn">7</td><td class="tn">10</td></tr>
-<tr><td class="tl">Smart Home / Nền tảng IoT</td><td class="tn">1</td><td class="tn">9</td><td class="tn">7</td><td class="tn">4</td></tr>
-<tr><td class="tl">Đấu thầu &amp; nhu cầu thị trường</td><td class="tn">3</td><td class="tn">9</td><td class="tn">6</td><td class="tn">6</td></tr>
-<tr><td class="tl">Xuyên suốt (mọi dòng)</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td></tr>
-<tr><td class="tl">Bối cảnh ngành</td><td class="tn">4</td><td class="tn">4</td><td class="tn">3</td><td class="tn">3</td></tr>
+<p class="gfnote" style="display:block">Cột <b>xu hướng</b> tạm ẩn: nó so 3 tháng gần nhất với 3 tháng liền trước, cần ít nhất 6 tháng có tin (hiện 5). Hai bảng đếm bên dưới vẫn đọc được bình thường.</p>
+<h3>Nhóm sản phẩm × tháng</h3><p class="gfnote" style="display:block">Số tin (đã khử trùng theo URL) chạm tới nhóm, theo tháng đăng của tin.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-05</th><th>26-06</th><th>26-07</th><th>26-08</th><th>26-09</th></tr></thead><tbody>
+<tr><td class="tl">PON / Truy nhập quang</td><td class="tn">5</td><td class="tn">7</td><td class="tn">4</td><td class="tn">5</td><td class="tn">9</td></tr>
+<tr><td class="tl">Mesh WiFi &amp; Gateway gia đình</td><td class="tn">15</td><td class="tn">12</td><td class="tn">12</td><td class="tn">11</td><td class="tn">8</td></tr>
+<tr><td class="tl">WiFi doanh nghiệp</td><td class="tn">3</td><td class="tn">7</td><td class="tn">3</td><td class="tn">2</td><td class="tn">6</td></tr>
+<tr><td class="tl">FWA &amp; 5G</td><td class="tn">3</td><td class="tn">5</td><td class="tn">8</td><td class="tn">5</td><td class="tn">6</td></tr>
+<tr><td class="tl">Thiết bị tiêu dùng</td><td class="tn">4</td><td class="tn">12</td><td class="tn">7</td><td class="tn">10</td><td class="tn">7</td></tr>
+<tr><td class="tl">Smart Home / Nền tảng IoT</td><td class="tn">1</td><td class="tn">9</td><td class="tn">7</td><td class="tn">4</td><td class="tn">4</td></tr>
+<tr><td class="tl">Đấu thầu &amp; nhu cầu thị trường</td><td class="tn">3</td><td class="tn">7</td><td class="tn">6</td><td class="tn">6</td><td class="tn">13</td></tr>
+<tr><td class="tl">Xuyên suốt (mọi dòng)</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td><td class="tn z"></td></tr>
+<tr><td class="tl">Bối cảnh ngành</td><td class="tn">4</td><td class="tn">4</td><td class="tn">3</td><td class="tn">3</td><td class="tn">2</td></tr>
 </tbody></table></div>
-<h3>Thuật ngữ × tháng</h3><p class="gfnote" style="display:block">Khớp cơ học <code>known_terms</code> và tên <code>radar_rings</code> trong tiêu đề/tóm tắt/why_keep. Một thuật ngữ xuất hiện ba tháng liền khác hẳn một thuật ngữ chỉ xuất hiện một lần.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-05</th><th>26-06</th><th>26-07</th><th>26-08</th></tr></thead><tbody>
-<tr><td class="tl">Matter</td><td class="tn z"></td><td class="tn">2</td><td class="tn">2</td><td class="tn">2</td></tr>
-<tr><td class="tl">DVB-I</td><td class="tn">2</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">eRedCap</td><td class="tn z"></td><td class="tn">1</td><td class="tn">1</td><td class="tn">1</td></tr>
-<tr><td class="tl">SGP.32</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td><td class="tn">1</td></tr>
-<tr><td class="tl">MAN-E</td><td class="tn">2</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">QCVN 11:2026/BCA</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">FTTR-B</td><td class="tn z"></td><td class="tn">2</td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">Joint Fabric</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">Viettel Tammi</td><td class="tn z"></td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">NB-IoT</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">RedCap</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">NTN</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">IMT-2030</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">Matter Service API</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">TR-517</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">Aliro</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">Operation CameraSwarm</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">Viettel GIGA</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">Starlink UTR-261</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">Thread Direct</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">prplWare</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">Thông tư 48/2026/TT-BCA</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">IEEE 3559-2026</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">ETSI EN 304 631</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">Settop box with Smart Speaker</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">5G RedCap</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">Wi-Fi 8 (802.11bn)</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">50G-PON</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<h3>Thuật ngữ × tháng</h3><p class="gfnote" style="display:block">Khớp cơ học <code>known_terms</code> và tên <code>radar_rings</code> trong tiêu đề/tóm tắt/why_keep. Một thuật ngữ xuất hiện ba tháng liền khác hẳn một thuật ngữ chỉ xuất hiện một lần.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-05</th><th>26-06</th><th>26-07</th><th>26-08</th><th>26-09</th></tr></thead><tbody>
+<tr><td class="tl">Matter</td><td class="tn z"></td><td class="tn">2</td><td class="tn">2</td><td class="tn">2</td><td class="tn">2</td></tr>
+<tr><td class="tl">MAN-E</td><td class="tn">2</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td></tr>
+<tr><td class="tl">SGP.32</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td><td class="tn">1</td><td class="tn">1</td></tr>
+<tr><td class="tl">DVB-I</td><td class="tn">2</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">FTTR-B</td><td class="tn z"></td><td class="tn">2</td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">eRedCap</td><td class="tn z"></td><td class="tn">1</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">QCVN 11:2026/BCA</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">RedCap</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Joint Fabric</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Aliro</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Viettel Tammi</td><td class="tn z"></td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">5G RedCap</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">50G-PON</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">NB-IoT</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">NTN</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">IMT-2030</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">Matter Service API</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">TR-517</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Suzi</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Amlogic S905D5</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Operation CameraSwarm</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Viettel GIGA</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Starlink UTR-261</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Thread Direct</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">prplWare</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">OpenSync</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Hubble Network</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Thông tư 48/2026/TT-BCA</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">IEEE 3559-2026</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">ETSI EN 304 631</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
 </tbody></table></div>
 <h3>Ring qua các kỳ</h3><ul class="ringhist"><li><b>2G GSM</b> <span class="ringtag" style="background:var(--hold)">HOLD</span> <small>26-05</small></li><li><b>3G UMTS</b> <span class="ringtag" style="background:var(--hold)">HOLD</span> <small>26-05</small></li><li><b>50G-PON</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>5G RedCap</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li><li><b>802.11bp / AMP (Wi-Fi cho cảm biến không pin)</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>AI biên tích hợp trong module cellular</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>AI trên gateway gia đình</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>An toàn cơ bản thiết bị IoT theo ETSI EN 303 645</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>FRMCS (kế nhiệm GSM-R)</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>FTTR (Fiber To The Room)</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li><li><b>LTE Cat-1 bis</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>Matter</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>MoCA Access cho MDU</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>Quản lý WLAN phụ thuộc hoàn toàn đám mây nhà cung cấp</b> <span class="ringtag" style="background:var(--hold)">HOLD</span> <small>26-05</small></li><li><b>SBOM &amp; secure-by-design</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>SGP.32 (eSIM IoT)</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>Suzi (Zigbee 4.0 sub-GHz)</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>TR-069 (CWMP)</b> <span class="ringtag" style="background:var(--hold)">HOLD</span> <small>26-05</small></li><li><b>USP / TR-369</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>UWB trong khóa và cảm biến nhà thông minh</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li><li><b>Wi-Fi 7 doanh nghiệp (enterprise WLAN)</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>Wi-Fi 8 (802.11bn)</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li><li><b>XGS-PON + Wi-Fi 7 (ONT/gateway gia đình)</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>prplOS làm nền tảng phần mềm CPE</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li></ul>
 </details>
@@ -1837,47 +2154,49 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
 </table></div>
 </div>
 <details class="scan trend" id="2026-05-01_2026-05-31-trend"><summary>Xu hướng xuyên kỳ</summary>
-<p class="gfnote" style="display:block">Cột <b>xu hướng</b> tạm ẩn: nó so 3 tháng gần nhất với 3 tháng liền trước, cần ít nhất 6 tháng có tin (hiện 4). Hai bảng đếm bên dưới vẫn đọc được bình thường.</p>
-<h3>Nhóm sản phẩm × tháng</h3><p class="gfnote" style="display:block">Số tin (đã khử trùng theo URL) chạm tới nhóm, theo tháng đăng của tin.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-05</th><th>26-06</th><th>26-07</th><th>26-08</th></tr></thead><tbody>
-<tr><td class="tl">PON / Truy nhập quang</td><td class="tn">5</td><td class="tn">7</td><td class="tn">4</td><td class="tn">5</td></tr>
-<tr><td class="tl">Mesh WiFi &amp; Gateway gia đình</td><td class="tn">15</td><td class="tn">12</td><td class="tn">12</td><td class="tn">11</td></tr>
-<tr><td class="tl">WiFi doanh nghiệp</td><td class="tn">3</td><td class="tn">7</td><td class="tn">3</td><td class="tn">2</td></tr>
-<tr><td class="tl">FWA &amp; 5G</td><td class="tn">3</td><td class="tn">5</td><td class="tn">8</td><td class="tn">5</td></tr>
-<tr><td class="tl">Thiết bị tiêu dùng</td><td class="tn">4</td><td class="tn">12</td><td class="tn">7</td><td class="tn">10</td></tr>
-<tr><td class="tl">Smart Home / Nền tảng IoT</td><td class="tn">1</td><td class="tn">9</td><td class="tn">7</td><td class="tn">4</td></tr>
-<tr><td class="tl">Đấu thầu &amp; nhu cầu thị trường</td><td class="tn">3</td><td class="tn">9</td><td class="tn">6</td><td class="tn">6</td></tr>
-<tr><td class="tl">Xuyên suốt (mọi dòng)</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td></tr>
-<tr><td class="tl">Bối cảnh ngành</td><td class="tn">4</td><td class="tn">4</td><td class="tn">3</td><td class="tn">3</td></tr>
+<p class="gfnote" style="display:block">Cột <b>xu hướng</b> tạm ẩn: nó so 3 tháng gần nhất với 3 tháng liền trước, cần ít nhất 6 tháng có tin (hiện 5). Hai bảng đếm bên dưới vẫn đọc được bình thường.</p>
+<h3>Nhóm sản phẩm × tháng</h3><p class="gfnote" style="display:block">Số tin (đã khử trùng theo URL) chạm tới nhóm, theo tháng đăng của tin.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-05</th><th>26-06</th><th>26-07</th><th>26-08</th><th>26-09</th></tr></thead><tbody>
+<tr><td class="tl">PON / Truy nhập quang</td><td class="tn">5</td><td class="tn">7</td><td class="tn">4</td><td class="tn">5</td><td class="tn">9</td></tr>
+<tr><td class="tl">Mesh WiFi &amp; Gateway gia đình</td><td class="tn">15</td><td class="tn">12</td><td class="tn">12</td><td class="tn">11</td><td class="tn">8</td></tr>
+<tr><td class="tl">WiFi doanh nghiệp</td><td class="tn">3</td><td class="tn">7</td><td class="tn">3</td><td class="tn">2</td><td class="tn">6</td></tr>
+<tr><td class="tl">FWA &amp; 5G</td><td class="tn">3</td><td class="tn">5</td><td class="tn">8</td><td class="tn">5</td><td class="tn">6</td></tr>
+<tr><td class="tl">Thiết bị tiêu dùng</td><td class="tn">4</td><td class="tn">12</td><td class="tn">7</td><td class="tn">10</td><td class="tn">7</td></tr>
+<tr><td class="tl">Smart Home / Nền tảng IoT</td><td class="tn">1</td><td class="tn">9</td><td class="tn">7</td><td class="tn">4</td><td class="tn">4</td></tr>
+<tr><td class="tl">Đấu thầu &amp; nhu cầu thị trường</td><td class="tn">3</td><td class="tn">7</td><td class="tn">6</td><td class="tn">6</td><td class="tn">13</td></tr>
+<tr><td class="tl">Xuyên suốt (mọi dòng)</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td><td class="tn z"></td></tr>
+<tr><td class="tl">Bối cảnh ngành</td><td class="tn">4</td><td class="tn">4</td><td class="tn">3</td><td class="tn">3</td><td class="tn">2</td></tr>
 </tbody></table></div>
-<h3>Thuật ngữ × tháng</h3><p class="gfnote" style="display:block">Khớp cơ học <code>known_terms</code> và tên <code>radar_rings</code> trong tiêu đề/tóm tắt/why_keep. Một thuật ngữ xuất hiện ba tháng liền khác hẳn một thuật ngữ chỉ xuất hiện một lần.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-05</th><th>26-06</th><th>26-07</th><th>26-08</th></tr></thead><tbody>
-<tr><td class="tl">Matter</td><td class="tn z"></td><td class="tn">2</td><td class="tn">2</td><td class="tn">2</td></tr>
-<tr><td class="tl">DVB-I</td><td class="tn">2</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">eRedCap</td><td class="tn z"></td><td class="tn">1</td><td class="tn">1</td><td class="tn">1</td></tr>
-<tr><td class="tl">SGP.32</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td><td class="tn">1</td></tr>
-<tr><td class="tl">MAN-E</td><td class="tn">2</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">QCVN 11:2026/BCA</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">FTTR-B</td><td class="tn z"></td><td class="tn">2</td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">Joint Fabric</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">Viettel Tammi</td><td class="tn z"></td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">NB-IoT</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">RedCap</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">NTN</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">IMT-2030</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">Matter Service API</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">TR-517</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">Aliro</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">Operation CameraSwarm</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">Viettel GIGA</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">Starlink UTR-261</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
-<tr><td class="tl">Thread Direct</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">prplWare</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">Thông tư 48/2026/TT-BCA</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">IEEE 3559-2026</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">ETSI EN 304 631</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">Settop box with Smart Speaker</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">5G RedCap</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
-<tr><td class="tl">Wi-Fi 8 (802.11bn)</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
-<tr><td class="tl">50G-PON</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<h3>Thuật ngữ × tháng</h3><p class="gfnote" style="display:block">Khớp cơ học <code>known_terms</code> và tên <code>radar_rings</code> trong tiêu đề/tóm tắt/why_keep. Một thuật ngữ xuất hiện ba tháng liền khác hẳn một thuật ngữ chỉ xuất hiện một lần.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-05</th><th>26-06</th><th>26-07</th><th>26-08</th><th>26-09</th></tr></thead><tbody>
+<tr><td class="tl">Matter</td><td class="tn z"></td><td class="tn">2</td><td class="tn">2</td><td class="tn">2</td><td class="tn">2</td></tr>
+<tr><td class="tl">MAN-E</td><td class="tn">2</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td></tr>
+<tr><td class="tl">SGP.32</td><td class="tn z"></td><td class="tn z"></td><td class="tn">2</td><td class="tn">1</td><td class="tn">1</td></tr>
+<tr><td class="tl">DVB-I</td><td class="tn">2</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">FTTR-B</td><td class="tn z"></td><td class="tn">2</td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">eRedCap</td><td class="tn z"></td><td class="tn">1</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">QCVN 11:2026/BCA</td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">RedCap</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Joint Fabric</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Aliro</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Viettel Tammi</td><td class="tn z"></td><td class="tn">1</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">5G RedCap</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">50G-PON</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">NB-IoT</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">NTN</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">IMT-2030</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">Matter Service API</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">TR-517</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Suzi</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Amlogic S905D5</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Operation CameraSwarm</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Viettel GIGA</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Starlink UTR-261</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td></tr>
+<tr><td class="tl">Thread Direct</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">prplWare</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">OpenSync</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Hubble Network</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td></tr>
+<tr><td class="tl">Thông tư 48/2026/TT-BCA</td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">IEEE 3559-2026</td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td><td class="tn z"></td></tr>
+<tr><td class="tl">ETSI EN 304 631</td><td class="tn z"></td><td class="tn z"></td><td class="tn">1</td><td class="tn z"></td><td class="tn z"></td></tr>
 </tbody></table></div>
 <h3>Ring qua các kỳ</h3><ul class="ringhist"><li><b>2G GSM</b> <span class="ringtag" style="background:var(--hold)">HOLD</span> <small>26-05</small></li><li><b>3G UMTS</b> <span class="ringtag" style="background:var(--hold)">HOLD</span> <small>26-05</small></li><li><b>50G-PON</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>5G RedCap</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li><li><b>802.11bp / AMP (Wi-Fi cho cảm biến không pin)</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>AI biên tích hợp trong module cellular</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>AI trên gateway gia đình</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>An toàn cơ bản thiết bị IoT theo ETSI EN 303 645</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>FRMCS (kế nhiệm GSM-R)</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>FTTR (Fiber To The Room)</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li><li><b>LTE Cat-1 bis</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>Matter</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>MoCA Access cho MDU</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>Quản lý WLAN phụ thuộc hoàn toàn đám mây nhà cung cấp</b> <span class="ringtag" style="background:var(--hold)">HOLD</span> <small>26-05</small></li><li><b>SBOM &amp; secure-by-design</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>SGP.32 (eSIM IoT)</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>Suzi (Zigbee 4.0 sub-GHz)</b> <span class="ringtag" style="background:var(--assess)">ASSESS</span> <small>26-05</small></li><li><b>TR-069 (CWMP)</b> <span class="ringtag" style="background:var(--hold)">HOLD</span> <small>26-05</small></li><li><b>USP / TR-369</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>UWB trong khóa và cảm biến nhà thông minh</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li><li><b>Wi-Fi 7 doanh nghiệp (enterprise WLAN)</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>Wi-Fi 8 (802.11bn)</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li><li><b>XGS-PON + Wi-Fi 7 (ONT/gateway gia đình)</b> <span class="ringtag" style="background:var(--adopt)">ADOPT</span> <small>26-05</small></li><li><b>prplOS làm nền tảng phần mềm CPE</b> <span class="ringtag" style="background:var(--trial)">TRIAL</span> <small>26-05</small></li></ul>
 </details>

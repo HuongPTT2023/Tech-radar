@@ -457,14 +457,19 @@ ul.notes{color:var(--ink-2); font-size:var(--t6); margin:var(--s3) 0 0; padding-
 ul.notes li{margin-bottom:var(--s2); line-height:1.65;}
 ul.notes li::marker{color:var(--accent-bright);}
 code{font:500 .9em var(--mono); background:var(--chip-bg); padding:1px 6px; border-radius:6px;}
-details.scan{margin-top:var(--s7); background:var(--card); border:1px solid var(--line); border-radius:var(--r-md); padding:var(--s3) var(--s4);}
-details.scan summary{font:600 var(--t9)/1 var(--sans); text-transform:uppercase; letter-spacing:.1em; color:var(--muted); cursor:pointer; list-style:none;}
+/* Bốn khối gập cuối kỳ (danh mục đổi, xu hướng xuyên kỳ, tín hiệu mới, ghi chú quét): phần phụ
+   cho người bảo trì — nhỏ, xám, mặc định đóng, không có bóng để không tranh mắt với nội dung. */
+details.scan{margin-top:var(--s5); background:transparent; border:1px solid var(--line-2); border-radius:var(--r-sm);
+  padding:6px var(--s3); font-size:var(--t8); color:var(--muted);}
+details.scan summary{font:600 11px/1.4 var(--sans); text-transform:uppercase; letter-spacing:.08em; color:var(--muted); cursor:pointer; list-style:none;}
+details.scan[open]{padding-bottom:var(--s3);}
+details.scan ul.notes{font-size:var(--t8);}
 details.scan summary::-webkit-details-marker{display:none;}
 details.scan summary::before{content:"▸ "; color:var(--accent);}
 details[open].scan summary::before{content:"▾ ";}
 details.scan summary:hover{color:var(--accent-deep);}
-/* Các khối gập ở cuối kỳ (tín hiệu mới, ghi chú quét) đứng sát nhau như một nhóm */
-details.scan + details.scan,details.trend + details.scan{margin-top:var(--s3);}
+/* Các khối gập ở cuối kỳ đứng sát nhau như một nhóm; khối đầu cách bảng radar rings xa hơn */
+details.scan + details.scan{margin-top:6px;}
 details.scan{scroll-margin-top:140px;}
 
 /* ===== Điểm tin — panel đầu kỳ ===== */
@@ -492,14 +497,8 @@ ul.catchg li{padding:2px 0;}
 
 /* ===== Xu hướng xuyên kỳ ===== */
 /* Nằm ở cuối kỳ, ngay trên "Tín hiệu mới" — cùng nhóm với các khối gập tham khảo */
-details.trend{margin:var(--s7) 0 0; scroll-margin-top:140px; background:var(--card); border:1px solid var(--line); border-radius:var(--r-md);
-  padding:var(--s3) var(--s4); box-shadow:var(--shadow);}
-details.trend summary{font:600 var(--t8)/1.3 var(--sans); text-transform:uppercase; letter-spacing:.08em;
-  color:var(--accent-deep); cursor:pointer; list-style:none;}
-details.trend summary::-webkit-details-marker{display:none;}
-details.trend summary::before{content:"▸ "; color:var(--accent);}
-details[open].trend summary::before{content:"▾ ";}
-details.trend h3{font:600 var(--t8)/1 var(--sans); letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin:var(--s4) 0 var(--s2);}
+/* "Xu hướng xuyên kỳ" dùng chung kiểu details.scan; chỉ giữ phần riêng cho bảng bên trong */
+details.trend h3{font:600 11px/1 var(--sans); letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin:var(--s4) 0 var(--s2);}
 .tablewrap.trend{box-shadow:none;}
 .tablewrap.trend table{min-width:0; font-size:var(--t8);}
 .tablewrap.trend th,.tablewrap.trend td{padding:7px 9px; text-align:center;}
@@ -700,19 +699,19 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
   </div>
   <div class="groupfilter" id="groupfilter">
     <button class="gf active" data-g="">Tất cả</button>
-    <button class="gf" data-g="pon_access">PON / Truy nhập quang<span class="num">118</span></button>
-    <button class="gf" data-g="wifi_home">Mesh WiFi &amp; Gateway gia đình<span class="num">154</span></button>
-    <button class="gf" data-g="wifi_enterprise">WiFi doanh nghiệp<span class="num">67</span></button>
-    <button class="gf" data-g="fwa_5g">FWA &amp; 5G<span class="num">87</span></button>
-    <button class="gf" data-g="consumer_devices">Thiết bị tiêu dùng<span class="num">107</span></button>
-    <button class="gf" data-g="smart_home_platform">Smart Home / Nền tảng IoT<span class="num">102</span></button>
-    <button class="gf" data-g="dau_thau">Đấu thầu &amp; nhu cầu thị trường<span class="num">117</span></button>
-    <button class="gf" data-g="xuyen_suot">Xuyên suốt (mọi dòng)<span class="num">58</span></button>
-    <button class="gf" data-g="boi_canh_nganh">Bối cảnh ngành<span class="num">45</span></button>
+    <button class="gf" data-g="pon_access">PON / Truy nhập quang<span class="num"></span></button>
+    <button class="gf" data-g="wifi_home">Mesh WiFi &amp; Gateway gia đình<span class="num"></span></button>
+    <button class="gf" data-g="wifi_enterprise">WiFi doanh nghiệp<span class="num"></span></button>
+    <button class="gf" data-g="fwa_5g">FWA &amp; 5G<span class="num"></span></button>
+    <button class="gf" data-g="consumer_devices">Thiết bị tiêu dùng<span class="num"></span></button>
+    <button class="gf" data-g="smart_home_platform">Smart Home / Nền tảng IoT<span class="num"></span></button>
+    <button class="gf" data-g="dau_thau">Đấu thầu &amp; nhu cầu thị trường<span class="num"></span></button>
+    <button class="gf" data-g="xuyen_suot">Xuyên suốt (mọi dòng)<span class="num"></span></button>
+    <button class="gf" data-g="boi_canh_nganh">Bối cảnh ngành<span class="num"></span></button>
   </div>
   </div>
   <p class="gfnote" id="gfnote" hidden></p>
-<article class="period" id="2026-10-01_2026-10-08" hidden data-label="01/10 – 08/10/2026" data-range="01/10 – 08/10/2026">
+<article class="period" id="2026-10-01_2026-10-08" hidden data-label="01/10 – 08/10/2026" data-range="01/10 – 08/10/2026" data-gcounts='{&quot;wifi_home&quot;: 9, &quot;xuyen_suot&quot;: 3, &quot;pon_access&quot;: 9, &quot;fwa_5g&quot;: 8, &quot;wifi_enterprise&quot;: 1, &quot;smart_home_platform&quot;: 6, &quot;consumer_devices&quot;: 5, &quot;boi_canh_nganh&quot;: 4, &quot;dau_thau&quot;: 12}'>
 <div class="stats"><div><span class="v" data-stat="items">35</span><span class="k">tin</span></div><div><span class="v" data-stat="sources">20</span><span class="k">nguồn</span></div><div><span class="v" data-stat="rings">1</span><span class="k">ring dịch chuyển</span></div><div><span class="v" data-stat="upcoming">16</span><span class="k">mốc sắp tới</span></div></div>
 <h2 class="sectionhead actions-head" id="2026-10-01_2026-10-08-actions">Điểm tin<button type="button" class="fold" aria-expanded="true" aria-controls="2026-10-01_2026-10-08-actions-body" aria-label="Thu gọn hoặc mở rộng mục này" title="Thu gọn"></button></h2><div class="secbody" id="2026-10-01_2026-10-08-actions-body">
 <ol class="actions">
@@ -888,13 +887,6 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
   </ul>
 </section>
 </div>
-<h2 class="sectionhead" id="2026-10-01_2026-10-08-catalog">Danh mục đổi trong kỳ<span class="num">3</span><button type="button" class="fold" aria-expanded="true" aria-controls="2026-10-01_2026-10-08-catalog-body" aria-label="Thu gọn hoặc mở rộng mục này" title="Thu gọn"></button></h2><div class="secbody" id="2026-10-01_2026-10-08-catalog-body">
-<p class="gfnote" style="display:block;margin:0 0 10px">Từ lần làm mới danh mục: sản phẩm xuất hiện hoặc biến mất trên trang chính hãng. Trạng thái danh mục, không phải tin có bài báo.</p><div class="tablewrap"><table><thead><tr><th>Ngày</th><th>Hãng</th><th>Nhóm</th><th>Thay đổi</th></tr></thead><tbody>
-<tr><td class="when">2026-10-08</td><td><b>vnpt_tech</b></td><td>PON / Truy nhập quang</td><td><ul class="catchg"><li>+ iGate X740-B XGS-PON ONT Wi-Fi 7 — iGate X740-B is an ONT device based on XGS-PON transmission technology, providing high-speed fiber-optic Internet access and digital IPTV services for end users. The device supports 10 Gbps/10 Gbps XGS-PON…</li></ul></td></tr>
-<tr><td class="when">2026-10-08</td><td><b>vnpt_tech</b></td><td>Mesh WiFi &amp; Gateway gia đình</td><td><ul class="catchg"><li>+ Mesh WiFi 7 - iGate M74-B — iGate M74-B is a Wi-Fi 7 Access Point designed to provide high-speed Internet connectivity and operate either independently or as part of a Mesh Wi-Fi network. Supporting Router, Repeater, and Mesh Node modes, the…</li></ul></td></tr>
-<tr><td class="when">2026-10-08</td><td><b>tplink</b></td><td>Mesh WiFi &amp; Gateway gia đình</td><td><ul class="catchg"><li>− HB810 BE22000 Tri-Band Whole Home Mesh WiFi 7 System — Wireless Standards: IEEE 802.11be/ax 6 GHz / IEEE 802.11be/ax/ac/n/a 5 GHz / IEEE 802.11be/ax/n/g/b 2.4 GHz; Interface: 1× 10 GbE/SFP+ Combo WAN/LAN Port / 1× 10 GbE LAN Port / 2× 2.5 GbE LAN Ports / 1× USB 3.0 Port / / *Per Unit; Frequency: 2.4 GHz, 5 GHz, and 6 GHz</li></ul></td></tr>
-</tbody></table></div>
-</div>
 <h2 class="sectionhead" id="2026-10-01_2026-10-08-upcoming">Lịch sắp tới — cần theo dõi<button type="button" class="fold" aria-expanded="true" aria-controls="2026-10-01_2026-10-08-upcoming-body" aria-label="Thu gọn hoặc mở rộng mục này" title="Thu gọn"></button></h2><div class="secbody" id="2026-10-01_2026-10-08-upcoming-body">
 <div class="tablewrap"><table><thead><tr><th>Mốc</th><th>Sự kiện</th><th>Vì sao đáng theo dõi</th></tr></thead><tbody>
     <tr><td class="when">13/10/2026</td><td>Hạn đóng thầu gói nâng cấp phân hệ quản lý CPE của VNPT Net (giá gói 8,1 tỷ)</td><td>Phạm vi nâng cấp quyết định giao thức quản lý (TR-069 hay USP) mà gateway bán cho VNPT phải hỗ trợ</td></tr>
@@ -949,7 +941,12 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
 </tbody>
 </table></div>
 </div>
-<details class="trend" id="2026-10-01_2026-10-08-trend"><summary>Xu hướng xuyên kỳ</summary>
+<details class="scan" id="2026-10-01_2026-10-08-catalog"><summary>Danh mục đổi trong kỳ (3)</summary><p class="gfnote" style="display:block;margin:0 0 10px">Từ lần làm mới danh mục: sản phẩm xuất hiện hoặc biến mất trên trang chính hãng. Trạng thái danh mục, không phải tin có bài báo.</p><div class="tablewrap"><table><thead><tr><th>Ngày</th><th>Hãng</th><th>Nhóm</th><th>Thay đổi</th></tr></thead><tbody>
+<tr><td class="when">2026-10-08</td><td><b>vnpt_tech</b></td><td>PON / Truy nhập quang</td><td><ul class="catchg"><li>+ iGate X740-B XGS-PON ONT Wi-Fi 7 — iGate X740-B is an ONT device based on XGS-PON transmission technology, providing high-speed fiber-optic Internet access and digital IPTV services for end users. The device supports 10 Gbps/10 Gbps XGS-PON…</li></ul></td></tr>
+<tr><td class="when">2026-10-08</td><td><b>vnpt_tech</b></td><td>Mesh WiFi &amp; Gateway gia đình</td><td><ul class="catchg"><li>+ Mesh WiFi 7 - iGate M74-B — iGate M74-B is a Wi-Fi 7 Access Point designed to provide high-speed Internet connectivity and operate either independently or as part of a Mesh Wi-Fi network. Supporting Router, Repeater, and Mesh Node modes, the…</li></ul></td></tr>
+<tr><td class="when">2026-10-08</td><td><b>tplink</b></td><td>Mesh WiFi &amp; Gateway gia đình</td><td><ul class="catchg"><li>− HB810 BE22000 Tri-Band Whole Home Mesh WiFi 7 System — Wireless Standards: IEEE 802.11be/ax 6 GHz / IEEE 802.11be/ax/ac/n/a 5 GHz / IEEE 802.11be/ax/n/g/b 2.4 GHz; Interface: 1× 10 GbE/SFP+ Combo WAN/LAN Port / 1× 10 GbE LAN Port / 2× 2.5 GbE LAN Ports / 1× USB 3.0 Port / / *Per Unit; Frequency: 2.4 GHz, 5 GHz, and 6 GHz</li></ul></td></tr>
+</tbody></table></div></details>
+<details class="scan trend" id="2026-10-01_2026-10-08-trend"><summary>Xu hướng xuyên kỳ</summary>
 <p class="gfnote" style="display:block">Cột <b>xu hướng</b> tạm ẩn: nó so 3 tháng gần nhất với 3 tháng liền trước, cần ít nhất 6 tháng có tin (hiện 5). Hai bảng đếm bên dưới vẫn đọc được bình thường.</p>
 <h3>Nhóm sản phẩm × tháng</h3><p class="gfnote" style="display:block">Số tin (đã khử trùng theo URL) chạm tới nhóm, theo tháng đăng của tin.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-06</th><th>26-07</th><th>26-08</th><th>26-09</th><th>26-10</th></tr></thead><tbody>
 <tr><td class="tl">PON / Truy nhập quang</td><td class="tn">10</td><td class="tn">8</td><td class="tn">9</td><td class="tn">21</td><td class="tn">15</td></tr>
@@ -1021,7 +1018,7 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
   <li><b>Bước 1a:</b> không hãng nào trong `vendor_catalogs` quá 6 tháng (cả 6 hãng đã quét lại ngày 08/10/2026), không quét lại.</li>
 </ul></details>
 </article>
-<article class="period" id="2026-06-01_2026-10-05-r2" hidden data-label="01/06 – 05/10/2026 (chạy lại)" data-range="01/06 – 05/10/2026">
+<article class="period" id="2026-06-01_2026-10-05-r2" hidden data-label="01/06 – 05/10/2026 (chạy lại)" data-range="01/06 – 05/10/2026" data-gcounts='{&quot;fwa_5g&quot;: 25, &quot;consumer_devices&quot;: 31, &quot;smart_home_platform&quot;: 27, &quot;dau_thau&quot;: 44, &quot;xuyen_suot&quot;: 13, &quot;wifi_home&quot;: 42, &quot;wifi_enterprise&quot;: 21, &quot;pon_access&quot;: 32, &quot;boi_canh_nganh&quot;: 12}'>
 <div class="stats"><div><span class="v" data-stat="items">165</span><span class="k">tin</span></div><div><span class="v" data-stat="sources">85</span><span class="k">nguồn</span></div><div><span class="v" data-stat="upcoming">14</span><span class="k">mốc sắp tới</span></div></div>
 <h2 class="sectionhead actions-head" id="2026-06-01_2026-10-05-r2-actions">Điểm tin<button type="button" class="fold" aria-expanded="true" aria-controls="2026-06-01_2026-10-05-r2-actions-body" aria-label="Thu gọn hoặc mở rộng mục này" title="Thu gọn"></button></h2><div class="secbody" id="2026-06-01_2026-10-05-r2-actions-body">
 <ol class="actions">
@@ -1694,7 +1691,7 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
 </tbody>
 </table></div>
 </div>
-<details class="trend" id="2026-06-01_2026-10-05-r2-trend"><summary>Xu hướng xuyên kỳ</summary>
+<details class="scan trend" id="2026-06-01_2026-10-05-r2-trend"><summary>Xu hướng xuyên kỳ</summary>
 <p class="gfnote" style="display:block">Cột <b>xu hướng</b> tạm ẩn: nó so 3 tháng gần nhất với 3 tháng liền trước, cần ít nhất 6 tháng có tin (hiện 5). Hai bảng đếm bên dưới vẫn đọc được bình thường.</p>
 <h3>Nhóm sản phẩm × tháng</h3><p class="gfnote" style="display:block">Số tin (đã khử trùng theo URL) chạm tới nhóm, theo tháng đăng của tin.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-06</th><th>26-07</th><th>26-08</th><th>26-09</th><th>26-10</th></tr></thead><tbody>
 <tr><td class="tl">PON / Truy nhập quang</td><td class="tn">10</td><td class="tn">8</td><td class="tn">9</td><td class="tn">21</td><td class="tn">15</td></tr>
@@ -1771,7 +1768,7 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
   <li><b>Bước 1a:</b> không hãng nào trong <code>vendor_catalogs</code> quá 6 tháng (cả sáu hãng đã quét lại ngày 08/10/2026) — không quét lại gì.</li>
 </ul></details>
 </article>
-<article class="period" id="2026-06-01_2026-10-05" hidden data-label="01/06 – 05/10/2026" data-range="01/06 – 05/10/2026">
+<article class="period" id="2026-06-01_2026-10-05" hidden data-label="01/06 – 05/10/2026" data-range="01/06 – 05/10/2026" data-gcounts='{&quot;fwa_5g&quot;: 20, &quot;consumer_devices&quot;: 26, &quot;smart_home_platform&quot;: 22, &quot;dau_thau&quot;: 44, &quot;xuyen_suot&quot;: 12, &quot;wifi_home&quot;: 35, &quot;wifi_enterprise&quot;: 16, &quot;pon_access&quot;: 26, &quot;boi_canh_nganh&quot;: 10}'>
 <div class="stats"><div><span class="v" data-stat="items">140</span><span class="k">tin</span></div><div><span class="v" data-stat="sources">72</span><span class="k">nguồn</span></div><div><span class="v" data-stat="upcoming">10</span><span class="k">mốc sắp tới</span></div></div>
 <h2 class="sectionhead actions-head" id="2026-06-01_2026-10-05-actions">Điểm tin<button type="button" class="fold" aria-expanded="true" aria-controls="2026-06-01_2026-10-05-actions-body" aria-label="Thu gọn hoặc mở rộng mục này" title="Thu gọn"></button></h2><div class="secbody" id="2026-06-01_2026-10-05-actions-body">
 <ol class="actions">
@@ -2396,7 +2393,7 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
 </tbody>
 </table></div>
 </div>
-<details class="trend" id="2026-06-01_2026-10-05-trend"><summary>Xu hướng xuyên kỳ</summary>
+<details class="scan trend" id="2026-06-01_2026-10-05-trend"><summary>Xu hướng xuyên kỳ</summary>
 <p class="gfnote" style="display:block">Cột <b>xu hướng</b> tạm ẩn: nó so 3 tháng gần nhất với 3 tháng liền trước, cần ít nhất 6 tháng có tin (hiện 5). Hai bảng đếm bên dưới vẫn đọc được bình thường.</p>
 <h3>Nhóm sản phẩm × tháng</h3><p class="gfnote" style="display:block">Số tin (đã khử trùng theo URL) chạm tới nhóm, theo tháng đăng của tin.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-06</th><th>26-07</th><th>26-08</th><th>26-09</th><th>26-10</th></tr></thead><tbody>
 <tr><td class="tl">PON / Truy nhập quang</td><td class="tn">10</td><td class="tn">8</td><td class="tn">9</td><td class="tn">21</td><td class="tn">15</td></tr>
@@ -2472,7 +2469,7 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
   <li><b>Lưu ý cấu hình radar_rings:</b> config có hai cặp ring trùng nghĩa ("Wi-Fi 8 (802.11bn)" / "Wi-Fi 8 / 802.11bn", "50G-PON" / "50G-PON đối xứng") và "Matter" / "Matter / Thread". Kỳ này không gộp vì gộp là sửa config ngoài phạm vi bước 13; cần người quyết.</li>
 </ul></details>
 </article>
-<article class="period" id="2026-06-01_2026-10-01" hidden data-label="01/06 – 01/10/2026" data-range="01/06 – 01/10/2026">
+<article class="period" id="2026-06-01_2026-10-01" hidden data-label="01/06 – 01/10/2026" data-range="01/06 – 01/10/2026" data-gcounts='{&quot;wifi_home&quot;: 29, &quot;pon_access&quot;: 23, &quot;wifi_enterprise&quot;: 14, &quot;consumer_devices&quot;: 23, &quot;xuyen_suot&quot;: 16, &quot;smart_home_platform&quot;: 19, &quot;fwa_5g&quot;: 14, &quot;dau_thau&quot;: 10, &quot;boi_canh_nganh&quot;: 8}'>
 <div class="stats"><div><span class="v" data-stat="items">73</span><span class="k">tin</span></div><div><span class="v" data-stat="sources">47</span><span class="k">nguồn</span></div><div><span class="v" data-stat="rings">3</span><span class="k">ring dịch chuyển</span></div><div><span class="v" data-stat="upcoming">12</span><span class="k">mốc sắp tới</span></div></div>
 <h2 class="sectionhead actions-head" id="2026-06-01_2026-10-01-actions">Điểm tin<button type="button" class="fold" aria-expanded="true" aria-controls="2026-06-01_2026-10-01-actions-body" aria-label="Thu gọn hoặc mở rộng mục này" title="Thu gọn"></button></h2><div class="secbody" id="2026-06-01_2026-10-01-actions-body">
 <ol class="actions">
@@ -2961,7 +2958,7 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
 </tbody>
 </table></div>
 </div>
-<details class="trend" id="2026-06-01_2026-10-01-trend"><summary>Xu hướng xuyên kỳ</summary>
+<details class="scan trend" id="2026-06-01_2026-10-01-trend"><summary>Xu hướng xuyên kỳ</summary>
 <p class="gfnote" style="display:block">Cột <b>xu hướng</b> tạm ẩn: nó so 3 tháng gần nhất với 3 tháng liền trước, cần ít nhất 6 tháng có tin (hiện 5). Hai bảng đếm bên dưới vẫn đọc được bình thường.</p>
 <h3>Nhóm sản phẩm × tháng</h3><p class="gfnote" style="display:block">Số tin (đã khử trùng theo URL) chạm tới nhóm, theo tháng đăng của tin.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-06</th><th>26-07</th><th>26-08</th><th>26-09</th><th>26-10</th></tr></thead><tbody>
 <tr><td class="tl">PON / Truy nhập quang</td><td class="tn">10</td><td class="tn">8</td><td class="tn">9</td><td class="tn">21</td><td class="tn">15</td></tr>
@@ -3035,7 +3032,7 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
   <li><b>Gói thầu bị loại khỏi bể:</b> tender_scan.py bỏ 55 gói đã huỷ hoặc thông báo thử. 13 gói đăng mời thầu trước khung nhưng công bố kết quả trong khung vẫn được đưa vào — đó là đường mà R-51 và R-52 vào báo cáo.</li>
 </ul></details>
 </article>
-<article class="period" id="2026-06-29_2026-09-29-r2" hidden data-label="29/06 – 29/09/2026 (chạy lại)" data-range="29/06 – 29/09/2026">
+<article class="period" id="2026-06-29_2026-09-29-r2" hidden data-label="29/06 – 29/09/2026 (chạy lại)" data-range="29/06 – 29/09/2026" data-gcounts='{&quot;pon_access&quot;: 15, &quot;wifi_home&quot;: 20, &quot;wifi_enterprise&quot;: 10, &quot;consumer_devices&quot;: 16, &quot;smart_home_platform&quot;: 15, &quot;fwa_5g&quot;: 15, &quot;xuyen_suot&quot;: 5, &quot;dau_thau&quot;: 7, &quot;boi_canh_nganh&quot;: 6}'>
 <div class="stats"><div><span class="v" data-stat="items">60</span><span class="k">tin</span></div><div><span class="v" data-stat="sources">40</span><span class="k">nguồn</span></div><div><span class="v" data-stat="upcoming">9</span><span class="k">mốc sắp tới</span></div></div>
 <h2 class="sectionhead actions-head" id="2026-06-29_2026-09-29-r2-actions">Điểm tin<button type="button" class="fold" aria-expanded="true" aria-controls="2026-06-29_2026-09-29-r2-actions-body" aria-label="Thu gọn hoặc mở rộng mục này" title="Thu gọn"></button></h2><div class="secbody" id="2026-06-29_2026-09-29-r2-actions-body">
 <ol class="actions">
@@ -3364,7 +3361,7 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
 </tbody>
 </table></div>
 </div>
-<details class="trend" id="2026-06-29_2026-09-29-r2-trend"><summary>Xu hướng xuyên kỳ</summary>
+<details class="scan trend" id="2026-06-29_2026-09-29-r2-trend"><summary>Xu hướng xuyên kỳ</summary>
 <p class="gfnote" style="display:block">Cột <b>xu hướng</b> tạm ẩn: nó so 3 tháng gần nhất với 3 tháng liền trước, cần ít nhất 6 tháng có tin (hiện 5). Hai bảng đếm bên dưới vẫn đọc được bình thường.</p>
 <h3>Nhóm sản phẩm × tháng</h3><p class="gfnote" style="display:block">Số tin (đã khử trùng theo URL) chạm tới nhóm, theo tháng đăng của tin.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-06</th><th>26-07</th><th>26-08</th><th>26-09</th><th>26-10</th></tr></thead><tbody>
 <tr><td class="tl">PON / Truy nhập quang</td><td class="tn">10</td><td class="tn">8</td><td class="tn">9</td><td class="tn">21</td><td class="tn">15</td></tr>
@@ -3431,7 +3428,7 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
   <li><b>Lọc</b>: đọc bể theo thứ tự <code>prerank.py</code>; phần gói thầu (~955) được lướt tiêu đề toàn bộ, không lọc regex. Hai link Google News không giải mã được (ASUS Wi-Fi 8 trên TechPowerUp, Espressif Aliro) — dùng bài khác cùng sự kiện hoặc bỏ.</li>
 </ul></details>
 </article>
-<article class="period" id="2026-06-29_2026-09-29-ver2" hidden data-label="29/06 – 29/09/2026 (ver2)" data-range="29/06 – 29/09/2026">
+<article class="period" id="2026-06-29_2026-09-29-ver2" hidden data-label="29/06 – 29/09/2026 (ver2)" data-range="29/06 – 29/09/2026" data-gcounts='{&quot;wifi_home&quot;: 19, &quot;wifi_enterprise&quot;: 5, &quot;pon_access&quot;: 13, &quot;xuyen_suot&quot;: 9, &quot;smart_home_platform&quot;: 13, &quot;consumer_devices&quot;: 6, &quot;boi_canh_nganh&quot;: 5, &quot;fwa_5g&quot;: 5}'>
 <div class="stats"><div><span class="v" data-stat="items">37</span><span class="k">tin</span></div><div><span class="v" data-stat="sources">25</span><span class="k">nguồn</span></div><div><span class="v" data-stat="rings">6</span><span class="k">ring dịch chuyển</span></div><div><span class="v" data-stat="upcoming">5</span><span class="k">mốc sắp tới</span></div></div>
 <h2 class="sectionhead actions-head" id="2026-06-29_2026-09-29-ver2-actions">Điểm tin<button type="button" class="fold" aria-expanded="true" aria-controls="2026-06-29_2026-09-29-ver2-actions-body" aria-label="Thu gọn hoặc mở rộng mục này" title="Thu gọn"></button></h2><div class="secbody" id="2026-06-29_2026-09-29-ver2-actions-body">
 <ol class="actions">
@@ -3741,7 +3738,7 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
 </tbody>
 </table></div>
 </div>
-<details class="trend" id="2026-06-29_2026-09-29-ver2-trend"><summary>Xu hướng xuyên kỳ</summary>
+<details class="scan trend" id="2026-06-29_2026-09-29-ver2-trend"><summary>Xu hướng xuyên kỳ</summary>
 <p class="gfnote" style="display:block">Cột <b>xu hướng</b> tạm ẩn: nó so 3 tháng gần nhất với 3 tháng liền trước, cần ít nhất 6 tháng có tin (hiện 5). Hai bảng đếm bên dưới vẫn đọc được bình thường.</p>
 <h3>Nhóm sản phẩm × tháng</h3><p class="gfnote" style="display:block">Số tin (đã khử trùng theo URL) chạm tới nhóm, theo tháng đăng của tin.</p><div class="tablewrap trend"><table><thead><tr><th></th><th>26-06</th><th>26-07</th><th>26-08</th><th>26-09</th><th>26-10</th></tr></thead><tbody>
 <tr><td class="tl">PON / Truy nhập quang</td><td class="tn">10</td><td class="tn">8</td><td class="tn">9</td><td class="tn">21</td><td class="tn">15</td></tr>
@@ -3883,9 +3880,31 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
     periods.forEach(function (p) { p.hidden = p !== target; });
     tocs.forEach(function (t) { t.hidden = t.dataset.for !== target.id; });
     sel.value = target.id;
+    syncGroupCounts(target);
     // Giữ nguyên nhóm đang lọc khi đổi kỳ — đổi kỳ không có nghĩa là muốn xem lại tất cả.
     applyFilter(target);
     watchHeadings(target);
+  }
+
+  // Số trên nút lọc là của KỲ ĐANG XEM (`data-gcounts` của article), không phải cả trang;
+  // nhóm không có tin trong kỳ thì ẩn nút, và nếu đang lọc đúng nhóm đó thì về "Tất cả".
+  function syncGroupCounts(article) {
+    if (!gfBar) return;
+    var counts = {};
+    try { counts = JSON.parse(article.getAttribute("data-gcounts") || "{}"); } catch (e) {}
+    Array.prototype.forEach.call(gfBar.querySelectorAll("button.gf"), function (b) {
+      var g = b.dataset.g || "";
+      if (!g) return;
+      var n = counts[g] || 0, num = b.querySelector(".num");
+      if (num) num.textContent = n ? String(n) : "";
+      b.hidden = !n;
+      if (!n && curGroup === g) {
+        curGroup = "";
+        Array.prototype.forEach.call(gfBar.querySelectorAll("button.gf"), function (x) {
+          x.classList.toggle("active", !x.dataset.g);
+        });
+      }
+    });
   }
 
   // --- Lọc theo nhóm sản phẩm ---------------------------------------------------

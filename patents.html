@@ -560,7 +560,6 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
 .card .meta .dom{margin-left:auto}
 .card .ipcrow,.card .invrow{font-size:var(--t8);color:var(--muted);margin:6px 0 0}
 .card .abstract{margin:8px 0 0}
-.emptyco{color:var(--muted);font-size:var(--t7);margin:-6px 0 18px}
 </style>
 </head>
 <body>
@@ -625,7 +624,6 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
 <article class="period" id="p-2026-04-15-2026-10-15" hidden data-label="2026-04-15 → 2026-10-15">
 <div class="stats"><div><span class="v" data-stat="patents">48</span><span class="k">Patents</span></div><div><span class="v" data-stat="related">6</span><span class="k">Related</span></div><div><span class="v" data-stat="vietnam">48</span><span class="k">Vietnam</span></div><div><span class="v" data-stat="abroad">0</span><span class="k">Abroad</span></div></div>
 <h2 class="sectionhead" id="p-2026-04-15-2026-10-15-c0" data-co="viettel">Viettel<span class="num">41</span></h2>
-<p class="emptyco" data-co="viettel" hidden>Không có đơn trong khung này (lọc hiện tại). Toàn bộ lịch sử: 1021 đơn.</p>
 <div class="cobody" data-co="viettel">
 <section class="topic" id="p-2026-04-15-2026-10-15-c0t0">
   <h3>5G / LTE (RAN và CPE)<span class="num">5</span></h3>
@@ -941,12 +939,10 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
 </section>
 </div>
 <h2 class="sectionhead" id="p-2026-04-15-2026-10-15-c1" data-co="fpt">FPT<span class="num">0</span></h2>
-<p class="emptyco" data-co="fpt">Không có đơn trong khung này (lọc hiện tại). Toàn bộ lịch sử: 90 đơn.</p>
 <div class="cobody" data-co="fpt">
 
 </div>
 <h2 class="sectionhead" id="p-2026-04-15-2026-10-15-c2" data-co="vingroup">Vingroup<span class="num">7</span></h2>
-<p class="emptyco" data-co="vingroup" hidden>Không có đơn trong khung này (lọc hiện tại). Toàn bộ lịch sử: 132 đơn.</p>
 <div class="cobody" data-co="vingroup">
 <section class="topic" id="p-2026-04-15-2026-10-15-c2t0">
   <h3>Camera &amp; thị giác máy<span class="num">1</span></h3>
@@ -1019,17 +1015,14 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
 </section>
 </div>
 <h2 class="sectionhead" id="p-2026-04-15-2026-10-15-c3" data-co="bkav">Bkav<span class="num">0</span></h2>
-<p class="emptyco" data-co="bkav">Không có đơn trong khung này (lọc hiện tại). Toàn bộ lịch sử: 42 đơn.</p>
 <div class="cobody" data-co="bkav">
 
 </div>
 <h2 class="sectionhead" id="p-2026-04-15-2026-10-15-c4" data-co="cmc">CMC<span class="num">0</span></h2>
-<p class="emptyco" data-co="cmc">Không có đơn trong khung này (lọc hiện tại). Toàn bộ lịch sử: 10 đơn.</p>
 <div class="cobody" data-co="cmc">
 
 </div>
 <h2 class="sectionhead" id="p-2026-04-15-2026-10-15-c5" data-co="vnpt">VNPT <span class="chip grp-ctx">đối chiếu</span><span class="num">0</span></h2>
-<p class="emptyco" data-co="vnpt">Không có đơn trong khung này (lọc hiện tại). Toàn bộ lịch sử: 0 đơn.</p>
 <div class="cobody" data-co="vnpt">
 
 </div>
@@ -1085,12 +1078,29 @@ ul.ringhist small{color:var(--muted); font-family:var(--mono);}
       t.hidden = n === 0;
       var num = t.querySelector("h3 .num"); if (num) num.textContent = n;
     });
+    // Hãng không còn đơn nào sau lọc thì ẩn cả mục lẫn dòng mục lục — một tiêu đề "FPT 0"
+    // chỉ gây nhiễu (người dùng chỉ ra 15/10/2026). Mục lục cập nhật số theo thẻ đang hiện.
+    var toc = document.querySelector('.toc[data-for="' + article.id + '"]');
     Array.prototype.forEach.call(article.querySelectorAll("h2.sectionhead[data-co]"), function (h) {
       var sec = article.querySelector('.cobody[data-co="' + h.dataset.co + '"]');
       var n = sec ? sec.querySelectorAll(".card:not([hidden])").length : 0;
       var num = h.querySelector(".num"); if (num) num.textContent = n;
-      var empty = article.querySelector('.emptyco[data-co="' + h.dataset.co + '"]');
-      if (empty) empty.hidden = n > 0;
+      h.hidden = n === 0; if (sec) sec.hidden = n === 0;
+      if (toc) {
+        var a = toc.querySelector('a[href="#' + h.id + '"]');
+        if (a) {
+          var li = a.closest("li"); li.hidden = n === 0;
+          var tnum = a.querySelector(".num"); if (tnum) tnum.textContent = n;
+          var kids = li.nextElementSibling;
+          if (kids && kids.querySelector(".kids")) kids.hidden = n === 0;
+        }
+      }
+    });
+    if (toc) Array.prototype.forEach.call(toc.querySelectorAll(".kids a"), function (a) {
+      var t = document.getElementById(a.getAttribute("href").slice(1));
+      var n = t ? t.querySelectorAll(".card:not([hidden])").length : 0;
+      a.parentElement.hidden = n === 0;
+      var tnum = a.querySelector(".num"); if (tnum) tnum.textContent = n;
     });
     var st = function (k, v) { var e = article.querySelector('[data-stat="' + k + '"]'); if (e) e.textContent = v; };
     st("patents", shown); st("related", rel); st("vietnam", vn); st("abroad", abroad);
